@@ -2,6 +2,11 @@
 [module main('http://www.eclipse.org/uml2/5.0.0/UML')]
 
 
-[template public generateMain(aClass : Class)]
+[template public generateElement(m : Model)]
 [comment @main/]
+
+[file (m.name, false, 'UTF-8')]
+My first example [m.name/] 
+
+[/file]
 [/template]
