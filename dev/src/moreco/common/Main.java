@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package moreco.main;
+package moreco.common;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class Main extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public static final String MODULE_FILE_NAME = "/moreco/main/main";
+    public static final String MODULE_FILE_NAME = "/moreco/common/main";
     
     /**
      * The name of the templates that are to be generated.
