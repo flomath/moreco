@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[module main('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+[import moreco::service::uml2service /]
+
+[template public generateMain(aClass : Class)]
+[if (aClass.hasStereotype('Main'))]
+	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
+package [aClass.namespace.name/];
+
+import java.io.IOException;
+import org.springframework.shell.Bootstrap;
+
+public class [aClass.name.toUpperFirst()/] {
+	public static void main(String[ '[]' /] args) throws IOException {
+		try {
+			Bootstrap.main(args);
+		} catch (IOException e) {
+			System.err.println("Error parsing command line");
+			throw e;
+		}
+	}
+}
+	[/file]
+[/if]
+[/template]

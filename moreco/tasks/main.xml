@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="main" name="moreco">
-    <property name="ECLIPSE_HOME" value="../../../../../../../../../../Applications/eclipse-mars/modeling-mars/Eclipse.app/Contents/MacOS"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../../../eclipse/java-mars/Eclipse.app/Contents/MacOS"/>
     <property name="ECLIPSE_WORKSPACE" value="../../../../../../../workspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->
