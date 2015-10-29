@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_pqBlQHMiEeWkOukjc0SMbw" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_645FAHMiEeWkOukjc0SMbw" name="Username" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LbbDMHMjEeWkOukjc0SMbw" name="Password" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UVFLgHMjEeWkOukjc0SMbw" name="Record">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_W86wcHMjEeWkOukjc0SMbw" name="ID" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ELtewHMkEeWkOukjc0SMbw" memberEnd="_ELuF0nMkEeWkOukjc0SMbw _ELus4HMkEeWkOukjc0SMbw" navigableOwnedEnd="_ELuF0nMkEeWkOukjc0SMbw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ELuF0HMkEeWkOukjc0SMbw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ELuF0XMkEeWkOukjc0SMbw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ELus4HMkEeWkOukjc0SMbw" name="user" type="_pqBlQHMiEeWkOukjc0SMbw" association="_ELtewHMkEeWkOukjc0SMbw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ELuF0nMkEeWkOukjc0SMbw" name="record" type="_UVFLgHMjEeWkOukjc0SMbw" aggregation="composite" association="_ELtewHMkEeWkOukjc0SMbw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQL8YHMkEeWkOukjc0SMbw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQO_sHMkEeWkOukjc0SMbw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_wF5cgHMiEeWkOukjc0SMbw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wF6qoHMiEeWkOukjc0SMbw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
