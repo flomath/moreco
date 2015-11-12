@@ -2,12 +2,16 @@
 [module main('http://www.eclipse.org/uml2/4.0.0/UML')]
 
 [import moreco::generate::main /]
+[import moreco::generate::classes /]
+[import moreco::generate::dao /]
 
 [template public main(aModel : Model)]
 [comment @main /]
 	[for (aPackage : Package | aModel.getNestedPackages())]
 		[for (aClass : Class | aPackage.packagedElement->filter(Class))]
 		 	[aClass.generateMain()/]
+			[aClass.generateClasses()/]
+			[aClass.generateDAO()/]
 		 [/for]
 	[/for]
 [/template]

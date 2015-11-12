@@ -1,0 +1,55 @@
+[comment encoding = UTF-8 /]
+[module dao('http://www.eclipse.org/uml2/4.0.0/UML')]
+
+[import moreco::service::uml2service /]
+[import moreco::generate::common::dataTypes /]
+
+[template public generateDAO(aClass : Class)]
+[if (aClass.hasStereotype('Entity'))]
+	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
+package [aClass.namespace.name/];
+
+[comment]
+[for (classifier:Classifier|aClass.operationsParametersTypes())]
+[if (classifier.isEntity())]
+import [classifier.entityPackage()/].[classifier.name/];
+[else]
+import [classifier.getCompleteName()/];	
+[/if]
+[/for]
+[/comment]
+
+/**
+ * DAO: [aClass.name.toUpperFirst()/]
+ * package: [aClass.namespace.name/]
+ */
+public class [aClass.name.toUpperFirst()/] {
+
+[comment]use own primitive types and act like they are basic java types![/comment]
+[for (p: Property | aClass.attribute) separator('\n')]
+	[p.visibility/] [p.type.name/] [p.name/];
+[/for]
+
+[for (p: Property | aClass.attribute) separator('\n')]
+	public [p.type.name/] get[p.name.toUpperFirst()/](){
+		return this.[p.name/];
+	}
+
+	public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]){
+		this.[p.name/] = [p.name/];
+	}
+[/for]
+
+[for (o: Operation | aClass.ownedOperation) separator('\n')]
+	[o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/]){
+		// [protected ('operation')]        
+		// TODO implement [o.name/]
+        throw new UnsupportedOperationException("Method not yet implemented");
+        // [/protected] 
+	}
+[/for]
+
+}
+	[/file]
+[/if]
+[/template]

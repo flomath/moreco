@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_B75vcPDnEeSHEJNELnFgmg/10" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_B75vcPDnEeSHEJNELnFgmg/10 ../springshell/springshell.profile.uml#_B75vcfDnEeSHEJNELnFgmg">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_gk7UcISmEeWmSZFgLfynHg/12" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_gk7UcISmEeWmSZFgLfynHg/12 ../MetaProfile/morecoprof.profile.uml#_gk7UcYSmEeWmSZFgLfynHg">
   <uml:Model xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_4XwfMISgEeWmSZFgLfynHg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
@@ -15,29 +15,15 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_WTq2IISdEeWmSZFgLfynHg" name="moreco.app">
       <packagedElement xmi:type="uml:Class" xmi:id="_UVFLgHMjEeWkOukjc0SMbw" name="Record">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_W86wcHMjEeWkOukjc0SMbw" name="ID" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" isUnique="false">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" isUnique="false">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" isUnique="false">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_W86wcHMjEeWkOukjc0SMbw" name="ID" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" type="_jaaDgIkqEeWDkO9NzaSg1w" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" type="_jaaDgIkqEeWDkO9NzaSg1w" isUnique="false"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_pqBlQHMiEeWkOukjc0SMbw" name="User">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_645FAHMiEeWkOukjc0SMbw" name="Username" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_LbbDMHMjEeWkOukjc0SMbw" name="Password" visibility="private" isUnique="false">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="public" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_645FAHMiEeWkOukjc0SMbw" name="Username" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LbbDMHMjEeWkOukjc0SMbw" name="Password" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ELtewHMkEeWkOukjc0SMbw" memberEnd="_ELuF0nMkEeWkOukjc0SMbw _ELus4HMkEeWkOukjc0SMbw" navigableOwnedEnd="_ELuF0nMkEeWkOukjc0SMbw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ELuF0HMkEeWkOukjc0SMbw" source="org.eclipse.papyrus">
@@ -50,25 +36,42 @@
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Cyj34ISmEeWmSZFgLfynHg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CylGAISmEeWmSZFgLfynHg" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CylGAYSmEeWmSZFgLfynHg" key="Version" value="1.0.4"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CylGAoSmEeWmSZFgLfynHg" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CylGA4SmEeWmSZFgLfynHg" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CylGBISmEeWmSZFgLfynHg" key="Date" value="2015-05-02"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CylGBYSmEeWmSZFgLfynHg" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cyke8ISmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../springshell/springshell.profile.uml#_B75vcfDnEeSHEJNELnFgmg"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="../springshell/springshell.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
-    </profileApplication>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_UzFfsIkoEeWDkO9NzaSg1w" name="long"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jaaDgIkqEeWDkO9NzaSg1w" name="Date"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.dao">
+      <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_qT6AAIksEeWDkO9NzaSg1w" name="AddRecord">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wHiLgIksEeWDkO9NzaSg1w" name="Description" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_xkDz4IksEeWDkO9NzaSg1w" name="Start" type="_jaaDgIkqEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_zk1_4IksEeWDkO9NzaSg1w" name="End" type="_jaaDgIkqEeWDkO9NzaSg1w"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hM1zkYSnEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_of-f4IkOEeWDkO9NzaSg1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogBjMIkOEeWDkO9NzaSg1w" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBjMYkOEeWDkO9NzaSg1w" key="Version" value="1.0.6"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBjMokOEeWDkO9NzaSg1w" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBjM4kOEeWDkO9NzaSg1w" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBjNIkOEeWDkO9NzaSg1w" key="Date" value="2015-11-06"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBjNYkOEeWDkO9NzaSg1w" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogAVEIkOEeWDkO9NzaSg1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_gk7UcYSmEeWmSZFgLfynHg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../MetaProfile/morecoprof.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
+    </profileApplication>
   </uml:Model>
-  <profile:Main xmi:id="_H3H98ISmEeWmSZFgLfynHg" base_Class="_SN5a8ISaEeWmSZFgLfynHg"/>
+  <profile:Main xmi:id="_s99HEIkOEeWDkO9NzaSg1w" base_Class="_SN5a8ISaEeWmSZFgLfynHg"/>
+  <profile:Scannable xmi:id="_jYl54IkPEeWDkO9NzaSg1w" base_Package="_OZ9PQISaEeWmSZFgLfynHg"/>
+  <profile:Scannable xmi:id="_3YbKwIkiEeWDkO9NzaSg1w" base_Package="_WTq2IISdEeWmSZFgLfynHg"/>
+  <profile:ValueObject xmi:id="_hMaJoIkkEeWDkO9NzaSg1w" base_Class="_pqBlQHMiEeWkOukjc0SMbw"/>
+  <profile:ValueObject xmi:id="_ihuWwIkkEeWDkO9NzaSg1w" base_Class="_UVFLgHMjEeWkOukjc0SMbw"/>
+  <profile:Entity xmi:id="_i7-wMIksEeWDkO9NzaSg1w" base_Class="_fdB9EIksEeWDkO9NzaSg1w"/>
 </xmi:XMI>

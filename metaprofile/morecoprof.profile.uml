@@ -16,7 +16,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_gk7UdoSmEeWmSZFgLfynHg" name="CliOption">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7Ud4SmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7Ud4SmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_gk7UeISmEeWmSZFgLfynHg" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -31,7 +31,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_gk7UgISmEeWmSZFgLfynHg" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7UgYSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7UgYSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_gk7UgoSmEeWmSZFgLfynHg" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -40,7 +40,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_gk7UhoSmEeWmSZFgLfynHg" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7Uh4SmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gk7Uh4SmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gk7UiISmEeWmSZFgLfynHg" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -91,7 +91,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_NiqkdYSmEeWmSZFgLfynHg" name="CliOption">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqkdoSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqkdoSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Niqkd4SmEeWmSZFgLfynHg" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -106,7 +106,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_Niqkf4SmEeWmSZFgLfynHg" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqkgISmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqkgISmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NiqkgYSmEeWmSZFgLfynHg" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -151,7 +151,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_NiqknYSmEeWmSZFgLfynHg" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqknoSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiqknoSmEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Niqkn4SmEeWmSZFgLfynHg" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -202,7 +202,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_B75vdvDnEeSHEJNELnFgmg" name="CliOption">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vd_DnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vd_DnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_B75vePDnEeSHEJNELnFgmg" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -217,7 +217,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_B75vgPDnEeSHEJNELnFgmg" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vgfDnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vgfDnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_B75vgvDnEeSHEJNELnFgmg" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -262,7 +262,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_B75vnvDnEeSHEJNELnFgmg" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vn_DnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B75vn_DnEeSHEJNELnFgmg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B75voPDnEeSHEJNELnFgmg" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -313,7 +313,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_CWhU1uLDEeSQFLNCt_nrew" name="CliOption">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU1-LDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU1-LDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_CWhU2OLDEeSQFLNCt_nrew" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -328,7 +328,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_CWhU4OLDEeSQFLNCt_nrew" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU4eLDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU4eLDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_CWhU4uLDEeSQFLNCt_nrew" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -373,7 +373,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_CWhU_uLDEeSQFLNCt_nrew" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU_-LDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CWhU_-LDEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CWhVAOLDEeSQFLNCt_nrew" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -418,7 +418,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="__HaUhuLCEeSQFLNCt_nrew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUh-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUh-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="__HaUiOLCEeSQFLNCt_nrew" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -433,7 +433,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="__HaUkOLCEeSQFLNCt_nrew" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUkeLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUkeLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="__HaUkuLCEeSQFLNCt_nrew" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -478,7 +478,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="__HaUruLCEeSQFLNCt_nrew" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUr-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__HaUr-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__HaUsOLCEeSQFLNCt_nrew" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -523,7 +523,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_6-glduLCEeSQFLNCt_nrew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-gld-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-gld-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6-gleOLCEeSQFLNCt_nrew" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -538,7 +538,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_6-glgOLCEeSQFLNCt_nrew" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-glgeLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-glgeLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6-glguLCEeSQFLNCt_nrew" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -583,7 +583,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_6-glnuLCEeSQFLNCt_nrew" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-gln-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6-gln-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6-gloOLCEeSQFLNCt_nrew" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -628,7 +628,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_wd5GZuLCEeSQFLNCt_nrew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5GZ-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5GZ-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_wd5GaOLCEeSQFLNCt_nrew" name="key" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -643,7 +643,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_wd5GcOLCEeSQFLNCt_nrew" name="CliAvailabilityIndicator">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5GceLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DQfUoOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5GceLCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_wd5GcuLCEeSQFLNCt_nrew" name="name" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -688,7 +688,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_wd5GjuLCEeSQFLNCt_nrew" name="CliCommand">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5Gj-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oHvwQOLBEeSQFLNCt_nrew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wd5Gj-LCEeSQFLNCt_nrew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wd5GkOLCEeSQFLNCt_nrew" name="base_Operation" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
         </eStructuralFeatures>
@@ -733,7 +733,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_zn8-1uEmEeSZw71nfpMpew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zn8-1-EmEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zn8-1-EmEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_zn8-2OEmEeSZw71nfpMpew" name="name" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -754,7 +754,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_MqGDFuEmEeSZw71nfpMpew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MqGDF-EmEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MqGDF-EmEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MqGDGOEmEeSZw71nfpMpew" name="name" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -775,7 +775,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v3bBeElEeSZw71nfpMpew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8v3bBuElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8v3bBuElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v3bB-ElEeSZw71nfpMpew" name="name" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -793,7 +793,7 @@
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rmI58eElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MzdFUOEkEeSZw71nfpMpew"/>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_rmI58uElEeSZw71nfpMpew" name="CliOption" abstract="true">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rmI58-ElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rmI58-ElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_rmI59OElEeSZw71nfpMpew" name="name" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -811,7 +811,7 @@
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K3G38uElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MzdFUOEkEeSZw71nfpMpew"/>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_K3G38-ElEeSZw71nfpMpew" name="CliOption">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K3G39OElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-GCZMOEkEeSZw71nfpMpew"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K3G39OElEeSZw71nfpMpew" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_K3G39eElEeSZw71nfpMpew" name="name" ordered="false" unique="false" lowerBound="1" upperBound="-1">
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
         </eStructuralFeatures>
@@ -849,59 +849,6 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_6DdScOLCEeSQFLNCt_nrew" name="base_Class" association="_6DdSceLCEeSQFLNCt_nrew">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_-GCZMOEkEeSZw71nfpMpew" name="CliOption">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="__ptycOEkEeSZw71nfpMpew" name="key" isUnique="false">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CR5VoOElEeSZw71nfpMpew" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CR7K0OElEeSZw71nfpMpew" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_O6GcEOLBEeSQFLNCt_nrew" name="base_Element" association="_O6GcEeLBEeSQFLNCt_nrew">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q9BWEOLBEeSQFLNCt_nrew" name="mandatory">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UcOA0OLBEeSQFLNCt_nrew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UcXx0OLBEeSQFLNCt_nrew" value="1"/>
-      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_jJClIOLCEeSQFLNCt_nrew"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_VZ9bcOLBEeSQFLNCt_nrew" name="help">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xq6xcOLBEeSQFLNCt_nrew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xq6xceLBEeSQFLNCt_nrew" value="1"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_DQfUoOLBEeSQFLNCt_nrew" name="CliAvailabilityIndicator">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_FlGbkOLBEeSQFLNCt_nrew" name="name">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_MAiN8OLBEeSQFLNCt_nrew" name="base_Operation" association="_MAiN8eLBEeSQFLNCt_nrew">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_MAiN8eLBEeSQFLNCt_nrew" name="E_CliAvailabilityIndicator_Operation1" memberEnd="_MAiN8uLBEeSQFLNCt_nrew _MAiN8OLBEeSQFLNCt_nrew">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MAiN8uLBEeSQFLNCt_nrew" name="extension_CliAvailabilityIndicator" type="_DQfUoOLBEeSQFLNCt_nrew" aggregation="composite" association="_MAiN8eLBEeSQFLNCt_nrew"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_O6GcEeLBEeSQFLNCt_nrew" name="E_CliOption_Element1" memberEnd="_O6GcEuLBEeSQFLNCt_nrew _O6GcEOLBEeSQFLNCt_nrew">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_O6GcEuLBEeSQFLNCt_nrew" name="extension_CliOption" type="_-GCZMOEkEeSZw71nfpMpew" aggregation="composite" association="_O6GcEeLBEeSQFLNCt_nrew"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oHvwQOLBEeSQFLNCt_nrew" name="CliCommand">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_pGBWYOLBEeSQFLNCt_nrew" name="base_Operation" association="_pGBWYeLBEeSQFLNCt_nrew">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_oaM8wOLCEeSQFLNCt_nrew" name="name">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pxuJUOLCEeSQFLNCt_nrew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pxuJUeLCEeSQFLNCt_nrew" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vBQwUOLCEeSQFLNCt_nrew" name="help">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vBQwUeLCEeSQFLNCt_nrew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vBQwUuLCEeSQFLNCt_nrew" value="1"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_pGBWYeLBEeSQFLNCt_nrew" name="E_CliCommand_Operation1" memberEnd="_pGBWYuLBEeSQFLNCt_nrew _pGBWYOLBEeSQFLNCt_nrew">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pGBWYuLBEeSQFLNCt_nrew" name="extension_CliCommand" type="_oHvwQOLBEeSQFLNCt_nrew" aggregation="composite" association="_pGBWYeLBEeSQFLNCt_nrew"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_sBPKUOLBEeSQFLNCt_nrew" name="Main">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0DIkMOLBEeSQFLNCt_nrew" name="base_Class" association="_0DIkMeLBEeSQFLNCt_nrew">
