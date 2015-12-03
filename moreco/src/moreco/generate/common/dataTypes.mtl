@@ -13,3 +13,9 @@
 [template public genRawDeclare(parameter:Parameter)]
 [parameter.type.name/] [name.toLowerFirst()/]
 [/template]
+
+[template public getCompleteName(namedElement:NamedElement) post (trim())]
+[let packages : Sequence(Package) = namedElement.ancestors(Package)->select(not oclIsTypeOf(Model))]
+	[packages.name->reverse()->sep('.')->toString().concat(if(packages->notEmpty())then '.' else '' endif).concat(namedElement.name)/]
+[/let]
+[/template]

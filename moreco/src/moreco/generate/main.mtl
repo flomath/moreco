@@ -8,11 +8,16 @@
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 package [aClass.namespace.name/];
 
+import javax.ws.rs.*;
 import java.io.IOException;
 
 public class [aClass.name.toUpperFirst()/] {
 	public static void main(String[ '[]' /] args) throws IOException {
 		// bootup
+		HttpServer server = HttpServerFactory.create( "http://localhost:8080/rest" );
+		server.start();
+		JOptionPane.showMessageDialog( null, "Ende" );
+		server.stop( 0 );
 	}
 }
 	[/file]

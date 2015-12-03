@@ -42,10 +42,18 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.dao">
       <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qT6AAIksEeWDkO9NzaSg1w" name="AddRecord">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wHiLgIksEeWDkO9NzaSg1w" name="Description" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_xkDz4IksEeWDkO9NzaSg1w" name="Start" type="_jaaDgIkqEeWDkO9NzaSg1w"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_zk1_4IksEeWDkO9NzaSg1w" name="End" type="_jaaDgIkqEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_u1nUEJmoEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
         </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_58JjoJmoEeW_fqpvBCJSyg" name="RemoveRecord">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_BffZQJmpEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7kgBgJmoEeW_fqpvBCJSyg" name="GetInstance"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JkDFkJmpEeW_fqpvBCJSyg" name="moreco.app.services">
+      <packagedElement xmi:type="uml:Class" xmi:id="_tLHrsJmpEeW_fqpvBCJSyg" name="TimeTrackerService">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_2lmpIJmpEeW_fqpvBCJSyg" name="GetRecordList"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">

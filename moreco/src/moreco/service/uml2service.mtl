@@ -15,3 +15,11 @@
 
 [query public getRealParameters(arg0 : Operation) : Sequence(Parameter)
 	= invoke('moreco.service.UML2Service', 'getRealParameters(org.eclipse.uml2.uml.Operation)', Sequence{arg0}) /]
+
+[query public operationsParameters(class : Class):Sequence(Parameter) = 
+class.ownedOperation.ownedParameter
+/]
+
+[query public operationsParametersTypes(class : Class):Sequence(Classifier) = 
+class.operationsParameters().type->filter(Classifier)->select(not (name.endsWith('String')) and not (name.endsWith('Integer')) and not (name.endsWith('Float')) and not (name.endsWith('Long')) and not (name.endsWith('Double')) and not (name.endsWith('Boolean')) and not (name.startsWith('byte')) and not (name.endsWith('Object')))->asOrderedSet()->asSequence()
+/]

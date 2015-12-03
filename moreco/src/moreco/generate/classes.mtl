@@ -8,6 +8,7 @@
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 package [aClass.namespace.name/];
 
+[comment]import via name > use real java types instead of our custom string types[/comment]
 import java.sql.Date;
 
 /**
