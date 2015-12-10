@@ -11,6 +11,10 @@ package [aClass.namespace.name/];
 [comment]import via name > use real java types instead of our custom string types[/comment]
 import java.sql.Date;
 
+[for (classifier:Classifier|aClass.operationsParametersTypes())]
+import [classifier.getCompleteName()/];
+[/for]
+
 /**
  * class: [aClass.name.toUpperFirst()/]
  * package: [aClass.namespace.name/]

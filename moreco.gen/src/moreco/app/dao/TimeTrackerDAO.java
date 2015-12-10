@@ -1,7 +1,6 @@
 package moreco.app.dao;
 
-import java.util.Date; 
-
+import java.util.Date;
 import moreco.app.Record;
 
 /**

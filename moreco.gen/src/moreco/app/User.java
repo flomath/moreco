@@ -2,23 +2,24 @@ package moreco.app;
 
 import java.sql.Date;
 
+
 /**
  * class: User
  * package: moreco.app
  */
 public class User {
 
-	public long ID;
+	public Long ID;
 
 	private String Username;
 
 	private String Password;
 
-	public long getID(){
+	public Long getID(){
 		return this.ID;
 	}
 
-	public void setID(long ID){
+	public void setID(Long ID){
 		this.ID = ID;
 	}
 

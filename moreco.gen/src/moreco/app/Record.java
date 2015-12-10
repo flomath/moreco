@@ -2,13 +2,14 @@ package moreco.app;
 
 import java.sql.Date;
 
+
 /**
  * class: Record
  * package: moreco.app
  */
 public class Record {
 
-	private long ID;
+	private Long ID;
 
 	private String Description;
 
@@ -16,11 +17,11 @@ public class Record {
 
 	private Date End;
 
-	public long getID(){
+	public Long getID(){
 		return this.ID;
 	}
 
-	public void setID(long ID){
+	public void setID(Long ID){
 		this.ID = ID;
 	}
 

@@ -3,6 +3,7 @@
 
 [import moreco::generate::main /]
 [import moreco::generate::classes /]
+[import moreco::generate::restservices /]
 [import moreco::generate::dao /]
 
 [template public main(aModel : Model)]
@@ -11,6 +12,7 @@
 		[for (aClass : Class | aPackage.packagedElement->filter(Class))]
 		 	[aClass.generateMain()/]
 			[aClass.generateClasses()/]
+			[aClass.generateRestservices()/]
 			[aClass.generateDAO()/]
 		 [/for]
 	[/for]
