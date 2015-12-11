@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_hLa0sJ8pEeW1i9yDHqSdJA/15" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_hLa0sJ8pEeW1i9yDHqSdJA/15 ../MetaProfile/morecoprof.profile.uml#_hLbbwJ8pEeW1i9yDHqSdJA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_z9GRUJ_1EeWBS5CrqAEn6w/18" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_z9GRUJ_1EeWBS5CrqAEn6w/18 ../MetaProfile/morecoprof.profile.uml#_z9G4YJ_1EeWBS5CrqAEn6w">
   <uml:Model xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_4XwfMISgEeWmSZFgLfynHg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
@@ -17,8 +17,8 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_UVFLgHMjEeWkOukjc0SMbw" name="Record">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_W86wcHMjEeWkOukjc0SMbw" name="ID" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" type="_jaaDgIkqEeWDkO9NzaSg1w" isUnique="false"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" type="_jaaDgIkqEeWDkO9NzaSg1w" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w" isUnique="false"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_pqBlQHMiEeWkOukjc0SMbw" name="User">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="public" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
@@ -38,17 +38,22 @@
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_UzFfsIkoEeWDkO9NzaSg1w" name="Long"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
-    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jaaDgIkqEeWDkO9NzaSg1w" name="Date"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.dao">
       <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qT6AAIksEeWDkO9NzaSg1w" name="AddRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_u1nUEJmoEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZxYIIJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_58JjoJmoEeW_fqpvBCJSyg" name="RemoveRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_BffZQJmpEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
         </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_7kgBgJmoEeW_fqpvBCJSyg" name="GetInstance"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7kgBgJmoEeW_fqpvBCJSyg" name="GetInstance">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_cqV5UJ_xEeWBS5CrqAEn6w" type="_fdB9EIksEeWDkO9NzaSg1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGIhAJ_xEeWBS5CrqAEn6w" name="searchParam" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ilH1sJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return"/>
+        </ownedOperation>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_JkDFkJmpEeW_fqpvBCJSyg" name="moreco.app.services">
@@ -69,6 +74,12 @@
         </ownedOperation>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_O2XzIJ_xEeWBS5CrqAEn6w" name="moreco.app.view">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SxIjEJ_yEeWBS5CrqAEn6w" name="Overview">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AWPVEJ_yEeWBS5CrqAEn6w" name="Overview"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NJygEJ_yEeWBS5CrqAEn6w" name="Create"/>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hM1zkYSnEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
@@ -76,15 +87,15 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_of-f4IkOEeWDkO9NzaSg1w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kLZM0J8pEeW1i9yDHqSdJA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kLZM0Z8pEeW1i9yDHqSdJA" key="Version" value="1.0.9"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kLZM0p8pEeW1i9yDHqSdJA" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kLZM058pEeW1i9yDHqSdJA" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kLZM1J8pEeW1i9yDHqSdJA" key="Date" value="2015-12-10"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kLZM1Z8pEeW1i9yDHqSdJA" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9siyIJ_1EeWBS5CrqAEn6w" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9siyIZ_1EeWBS5CrqAEn6w" key="Version" value="1.0.12"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9siyIp_1EeWBS5CrqAEn6w" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9siyI5_1EeWBS5CrqAEn6w" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9siyJJ_1EeWBS5CrqAEn6w" key="Date" value="2015-12-11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9siyJZ_1EeWBS5CrqAEn6w" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogAVEIkOEeWDkO9NzaSg1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_hLbbwJ8pEeW1i9yDHqSdJA"/>
+        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_z9G4YJ_1EeWBS5CrqAEn6w"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../MetaProfile/morecoprof.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
     </profileApplication>
@@ -100,4 +111,8 @@
   <profile:WebMethod xmi:id="_yBIDAJ8oEeW1i9yDHqSdJA" base_Operation="_l5neoJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="DeleteRecord"/>
   <profile:Scannable xmi:id="_Q9dYUJ8pEeW1i9yDHqSdJA" base_Package="_JkDFkJmpEeW_fqpvBCJSyg"/>
   <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/"/>
+  <profile:View xmi:id="_sjaG8J_1EeWBS5CrqAEn6w" base_Class="_SxIjEJ_yEeWBS5CrqAEn6w" base_ViewProperty="_SxIjEJ_yEeWBS5CrqAEn6w" Title="Overview"/>
+  <profile:NavigationItem xmi:id="_-hAU8J_1EeWBS5CrqAEn6w" CssClass="active" Label="Overview" Link="overview.html" base_Property="_AWPVEJ_yEeWBS5CrqAEn6w"/>
+  <profile:NavigationItem xmi:id="_ELmgQJ_2EeWBS5CrqAEn6w" Label="Create" Link="create.html" base_Property="_NJygEJ_yEeWBS5CrqAEn6w"/>
+  <profile:Scannable xmi:id="_EtMU8J_3EeWBS5CrqAEn6w" base_Package="_O2XzIJ_xEeWBS5CrqAEn6w"/>
 </xmi:XMI>

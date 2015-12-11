@@ -13,9 +13,9 @@ public class Record {
 
 	private String Description;
 
-	private Date Start;
+	private Long Start;
 
-	private Date End;
+	private Long End;
 
 	public Long getID(){
 		return this.ID;
@@ -33,19 +33,19 @@ public class Record {
 		this.Description = Description;
 	}
 
-	public Date getStart(){
+	public Long getStart(){
 		return this.Start;
 	}
 
-	public void setStart(Date Start){
+	public void setStart(Long Start){
 		this.Start = Start;
 	}
 
-	public Date getEnd(){
+	public Long getEnd(){
 		return this.End;
 	}
 
-	public void setEnd(Date End){
+	public void setEnd(Long End){
 		this.End = End;
 	}
 

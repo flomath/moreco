@@ -5,6 +5,7 @@
 [import moreco::generate::classes /]
 [import moreco::generate::restservices /]
 [import moreco::generate::dao /]
+[import moreco::generate::view /]
 
 [template public main(aModel : Model)]
 [comment @main /]
@@ -14,6 +15,7 @@
 			[aClass.generateClasses()/]
 			[aClass.generateRestservices()/]
 			[aClass.generateDAO()/]
+			[aClass.generateView()/]
 		 [/for]
 	[/for]
 [/template]

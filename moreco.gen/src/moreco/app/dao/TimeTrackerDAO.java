@@ -1,7 +1,7 @@
 package moreco.app.dao;
 
-import java.util.Date;
 import moreco.app.Record;
+import moreco.app.dao.TimeTrackerDAO;
 
 /**
  * DAO: TimeTrackerDAO
@@ -11,7 +11,7 @@ public class TimeTrackerDAO {
 
 
 
-	public void AddRecord(Record record){
+	public Record AddRecord(Record record){
 		// Start of user code operation        
 		// TODO implement GetRecords
         throw new UnsupportedOperationException("Method not yet implemented");
@@ -25,14 +25,14 @@ public class TimeTrackerDAO {
         // End of user code 
 	}
 
-	public void GetInstance(){
+	public TimeTrackerDAO GetInstance(){
 		// Start of user code operation        
 		// TODO implement GetInstance
         throw new UnsupportedOperationException("Method not yet implemented");
         // End of user code 
 	}
 
-	public void GetRecords(){
+	public Record GetRecords(String searchParam){
 		// Start of user code operation        
 		// TODO implement GetRecords
         throw new UnsupportedOperationException("Method not yet implemented");

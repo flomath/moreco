@@ -9,7 +9,6 @@
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 package [aClass.namespace.name/];
 
-import java.util.Date;
 [for (classifier:Classifier|aClass.operationsParametersTypes())]
 import [classifier.getCompleteName()/];
 [/for]
