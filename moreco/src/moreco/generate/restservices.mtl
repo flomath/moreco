@@ -21,19 +21,7 @@ import javax.ws.rs.*;
 @Path("[aClass.getValue(aClass.getAppliedStereotype('profile::RestService'), 'RestPath')/]")
 public class [aClass.name.toUpperFirst()/] {
 
-[for (o: Operation | aClass.ownedOperation) separator('\n')]
-[if (o.hasStereotype('WebMethod'))]
-	@Path("[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestPath')/]")
-	@[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestMethod')/]
-	@Produces("[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestOutput')/]")
-[/if]
-	[o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/]){
-		// [protected ('operation')]        
-		// TODO implement [o.name/]
-        throw new UnsupportedOperationException("Method not yet implemented");
-        // [/protected] 
-	}
-[/for]
+[aClass.generateOperations()/]
 
 }
 	[/file]

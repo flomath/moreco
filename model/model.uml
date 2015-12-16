@@ -21,7 +21,7 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w" isUnique="false"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_pqBlQHMiEeWkOukjc0SMbw" name="User">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="public" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_645FAHMiEeWkOukjc0SMbw" name="Username" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_LbbDMHMjEeWkOukjc0SMbw" name="Password" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
       </packagedElement>
@@ -39,7 +39,7 @@
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_UzFfsIkoEeWDkO9NzaSg1w" name="Long"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.daos">
-      <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
+      <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="RecordDAO" visibility="package">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sWrKAKP8EeWgFfOu_pc1Gg" name="DB_HOST" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_uxLdkKP8EeWgFfOu_pc1Gg" name="DB_USER" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_xanlAKP8EeWgFfOu_pc1Gg" name="DB_PASSWORD" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>

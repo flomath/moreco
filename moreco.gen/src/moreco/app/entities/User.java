@@ -11,34 +11,35 @@ package moreco.app.entities;
  */
 public class User {
 
-	public Long ID;
+  private Long ID;
 
-	private String Username;
+  private String Username;
 
-	private String Password;
+  private String Password;
 
-	public Long getID(){
-		return this.ID;
-	}
+  public Long getID(){
+    return this.ID;
+  }
 
-	public void setID(Long ID){
-		this.ID = ID;
-	}
+  public void setID(Long ID){
+    this.ID = ID;
+  }
 
-	public String getUsername(){
-		return this.Username;
-	}
+  public String getUsername(){
+    return this.Username;
+  }
 
-	public void setUsername(String Username){
-		this.Username = Username;
-	}
+  public void setUsername(String Username){
+    this.Username = Username;
+  }
 
-	public String getPassword(){
-		return this.Password;
-	}
+  public String getPassword(){
+    return this.Password;
+  }
 
-	public void setPassword(String Password){
-		this.Password = Password;
-	}
+  public void setPassword(String Password){
+    this.Password = Password;
+  }
+
 
 }

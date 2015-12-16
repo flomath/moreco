@@ -13,3 +13,35 @@ import [classifier.getCompleteName()/];
 [/for]
 [/template]
 
+[template public generateProperties(aClass : Class)]
+[comment]use own primitive types and act like they are basic java types![/comment]
+[for (p: Property | aClass.attribute) separator('\n')]
+  [p.visibility/] [if p.isStatic]static [/if][p.type.name/] [p.name/];
+[/for]
+
+[for (p: Property | aClass.attribute) separator('\n')]
+  public [p.type.name/] get[p.name.toUpperFirst()/](){
+    return this.[p.name/];
+  }
+
+  public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]){
+    this.[p.name/] = [p.name/];
+  }
+[/for]
+[/template]
+
+[template public generateOperations(aClass : Class)]
+[for (o: Operation | aClass.ownedOperation) separator('\n')]
+[if (o.hasStereotype('WebMethod'))]
+  @Path("[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestPath')/]")
+  @[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestMethod')/]
+  @Produces("[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestOutput')/]")
+[/if]
+  [o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/]) {
+    // [protected (o.name)]        
+    // TODO implement [o.name/]
+    throw new UnsupportedOperationException("Method not yet implemented");
+    // [/protected] 
+  }
+[/for]
+[/template]

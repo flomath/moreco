@@ -19,29 +19,9 @@
  */
 public class [aClass.name.toUpperFirst()/] {
 
-[comment]use own primitive types and act like they are basic java types![/comment]
-[for (p: Property | aClass.attribute) separator('\n')]
-	[p.visibility/] [if p.isStatic]static [/if][p.type.name/] [p.name/];
-[/for]
+[aClass.generateProperties()/]
 
-[for (p: Property | aClass.attribute) separator('\n')]
-	public [p.type.name/] get[p.name.toUpperFirst()/](){
-		return this.[p.name/];
-	}
-
-	public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]){
-		this.[p.name/] = [p.name/];
-	}
-[/for]
-
-[for (o: Operation | aClass.ownedOperation) separator('\n')]
-	[o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/]){
-		// [protected ('operation')]        
-		// TODO implement [o.name/]
-        throw new UnsupportedOperationException("Method not yet implemented");
-        // [/protected] 
-	}
-[/for]
+[aClass.generateOperations()/]
 
 }
 	[/file]
