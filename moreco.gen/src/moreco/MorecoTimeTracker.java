@@ -1,7 +1,9 @@
+
+// Start of user code imports
 package moreco;
 
-import javax.ws.rs.*;
-import java.io.IOException;
+
+// End of user code
 
 public class MorecoTimeTracker {
 	public static void main(String[] args) throws IOException {

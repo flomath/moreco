@@ -2,17 +2,15 @@
 [module classes('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
+[import moreco::generate::common::classHelper /]
 
 [template public generateClasses(aClass : Class)]
 [if (aClass.hasStereotype('ValueObject'))]
-	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
-package [aClass.namespace.name/];
+  [file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 
-[comment]import via name > use real java types instead of our custom string types[/comment]
-
-[for (classifier:Classifier|aClass.operationsParametersTypes())]
-import [classifier.getCompleteName()/];
-[/for]
+// [protected('imports')]
+[aClass.generateImports()/]
+// [/protected]
 
 /**
  * class: [aClass.name.toUpperFirst()/]

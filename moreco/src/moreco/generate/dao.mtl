@@ -3,15 +3,15 @@
 
 [import moreco::service::uml2service /]
 [import moreco::generate::common::dataTypes /]
+[import moreco::generate::common::classHelper /]
 
 [template public generateDAO(aClass : Class)]
 [if (aClass.hasStereotype('Entity'))]
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
-package [aClass.namespace.name/];
 
-[for (classifier:Classifier|aClass.operationsParametersTypes())]
-import [classifier.getCompleteName()/];
-[/for]
+// [protected('imports')]
+[aClass.generateImports()/]
+// [/protected]
 
 /**
  * DAO: [aClass.name.toUpperFirst()/]

@@ -2,14 +2,15 @@
 [module main('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
+[import moreco::generate::common::classHelper /]
 
 [template public generateMain(aClass : Class)]
 [if (aClass.hasStereotype('Main'))]
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
-package [aClass.namespace.name/];
 
-import javax.ws.rs.*;
-import java.io.IOException;
+// [protected('imports')]
+[aClass.generateImports()/]
+// [/protected]
 
 public class [aClass.name.toUpperFirst()/] {
 	public static void main(String[ '[]' /] args) throws IOException {

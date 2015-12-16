@@ -1,6 +1,10 @@
+
+// Start of user code imports
 package moreco.app.services;
 
+
 import javax.ws.rs.*;
+// End of user code
 
 /**
  * RestService: TimeTrackerService
@@ -14,7 +18,7 @@ public class TimeTrackerService {
 	@Produces("application/json")
 	public String GetRecordList(String searchParam){
 		// Start of user code operation        
-		// TODO implement DeleteRecord
+		// TODO implement GetRecordList
         throw new UnsupportedOperationException("Method not yet implemented");
         // End of user code 
 	}

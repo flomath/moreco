@@ -1,6 +1,9 @@
+
+// Start of user code imports
 package moreco.app;
 
 
+// End of user code
 
 /**
  * class: Record

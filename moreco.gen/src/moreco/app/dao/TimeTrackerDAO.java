@@ -1,7 +1,11 @@
+
+// Start of user code imports
 package moreco.app.dao;
 
 import moreco.app.Record;
 import moreco.app.dao.TimeTrackerDAO;
+
+// End of user code
 
 /**
  * DAO: TimeTrackerDAO
@@ -61,7 +65,7 @@ public class TimeTrackerDAO {
 
 	public Record AddRecord(Record record){
 		// Start of user code operation        
-		// TODO implement GetRecords
+		// TODO implement AddRecord
         throw new UnsupportedOperationException("Method not yet implemented");
         // End of user code 
 	}
