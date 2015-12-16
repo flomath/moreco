@@ -1,6 +1,6 @@
 
 // Start of user code imports
-package moreco.app.services;
+package moreco.app.restservices;
 
 
 import javax.ws.rs.*;
@@ -8,7 +8,7 @@ import javax.ws.rs.*;
 
 /**
  * RestService: TimeTrackerService
- * package: moreco.app.services
+ * package: moreco.app.restservices
  */
 @Path("moreco/")
 public class TimeTrackerService {

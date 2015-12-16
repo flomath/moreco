@@ -5,7 +5,7 @@
 [import moreco::generate::common::dataTypes /]
 [import moreco::generate::common::classHelper /]
 
-[template public generateRestservices(aClass : Class)]
+[template public generateRestServices(aClass : Class)]
 [if (aClass.hasStereotype('RestService'))]
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 

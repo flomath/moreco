@@ -1,11 +1,12 @@
 [comment encoding = UTF-8 /]
-[module classes('http://www.eclipse.org/uml2/5.0.0/UML') /]
+[module entities('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
+[import moreco::generate::common::dataTypes /]
 [import moreco::generate::common::classHelper /]
 
 [template public generateClasses(aClass : Class)]
-[if (aClass.hasStereotype('ValueObject'))]
+[if (aClass.hasStereotype('Entity'))]
   [file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 
 // [protected('imports')]

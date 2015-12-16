@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_EsBN8KPhEeWgFfOu_pc1Gg/23" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_EsBN8KPhEeWgFfOu_pc1Gg/23 ../MetaProfile/morecoprof.profile.uml#_EsCcEKPhEeWgFfOu_pc1Gg">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_blANgKQFEeWgFfOu_pc1Gg/24" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_blANgKQFEeWgFfOu_pc1Gg/24 ../MetaProfile/morecoprof.profile.uml#_blCCsKQFEeWgFfOu_pc1Gg">
   <uml:Model xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_4XwfMISgEeWmSZFgLfynHg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
@@ -13,7 +13,7 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_OZ9PQISaEeWmSZFgLfynHg" name="moreco">
       <packagedElement xmi:type="uml:Class" xmi:id="_SN5a8ISaEeWmSZFgLfynHg" name="MorecoTimeTracker"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_WTq2IISdEeWmSZFgLfynHg" name="moreco.app">
+    <packagedElement xmi:type="uml:Package" xmi:id="_WTq2IISdEeWmSZFgLfynHg" name="moreco.app.entities">
       <packagedElement xmi:type="uml:Class" xmi:id="_UVFLgHMjEeWkOukjc0SMbw" name="Record">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_W86wcHMjEeWkOukjc0SMbw" name="ID" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
@@ -38,7 +38,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_UzFfsIkoEeWDkO9NzaSg1w" name="Long"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.dao">
+    <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.daos">
       <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sWrKAKP8EeWgFfOu_pc1Gg" name="DB_HOST" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_uxLdkKP8EeWgFfOu_pc1Gg" name="DB_USER" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
@@ -61,7 +61,7 @@
         </ownedOperation>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_JkDFkJmpEeW_fqpvBCJSyg" name="moreco.app.services">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JkDFkJmpEeW_fqpvBCJSyg" name="moreco.app.restservices">
       <packagedElement xmi:type="uml:Class" xmi:id="_tLHrsJmpEeW_fqpvBCJSyg" name="TimeTrackerService">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_2lmpIJmpEeW_fqpvBCJSyg" name="GetRecordList">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_0gHqcJ8nEeW1i9yDHqSdJA" type="_5ZFMMIkoEeWDkO9NzaSg1w" direction="return"/>
@@ -79,7 +79,7 @@
         </ownedOperation>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_O2XzIJ_xEeWBS5CrqAEn6w" name="moreco.app.view">
+    <packagedElement xmi:type="uml:Package" xmi:id="_O2XzIJ_xEeWBS5CrqAEn6w" name="moreco.app.views">
       <packagedElement xmi:type="uml:Class" xmi:id="_SxIjEJ_yEeWBS5CrqAEn6w" name="Overview">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AWPVEJ_yEeWBS5CrqAEn6w" name="Overview"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_NJygEJ_yEeWBS5CrqAEn6w" name="Create"/>
@@ -108,15 +108,15 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_of-f4IkOEeWDkO9NzaSg1w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GSte8KPhEeWgFfOu_pc1Gg" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSte8aPhEeWgFfOu_pc1Gg" key="Version" value="1.0.17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSte8qPhEeWgFfOu_pc1Gg" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSte86PhEeWgFfOu_pc1Gg" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSte9KPhEeWgFfOu_pc1Gg" key="Date" value="2015-12-16"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSte9aPhEeWgFfOu_pc1Gg" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dQKHwKQFEeWgFfOu_pc1Gg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQKHwaQFEeWgFfOu_pc1Gg" key="Version" value="1.0.18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQKHwqQFEeWgFfOu_pc1Gg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQKHw6QFEeWgFfOu_pc1Gg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQKHxKQFEeWgFfOu_pc1Gg" key="Date" value="2015-12-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQKHxaQFEeWgFfOu_pc1Gg" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogAVEIkOEeWDkO9NzaSg1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_EsCcEKPhEeWgFfOu_pc1Gg"/>
+        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_blCCsKQFEeWgFfOu_pc1Gg"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../MetaProfile/morecoprof.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
     </profileApplication>
@@ -124,9 +124,6 @@
   <profile:Main xmi:id="_s99HEIkOEeWDkO9NzaSg1w" base_Class="_SN5a8ISaEeWmSZFgLfynHg"/>
   <profile:Scannable xmi:id="_jYl54IkPEeWDkO9NzaSg1w" base_Package="_OZ9PQISaEeWmSZFgLfynHg"/>
   <profile:Scannable xmi:id="_3YbKwIkiEeWDkO9NzaSg1w" base_Package="_WTq2IISdEeWmSZFgLfynHg"/>
-  <profile:ValueObject xmi:id="_hMaJoIkkEeWDkO9NzaSg1w" base_Class="_pqBlQHMiEeWkOukjc0SMbw"/>
-  <profile:ValueObject xmi:id="_ihuWwIkkEeWDkO9NzaSg1w" base_Class="_UVFLgHMjEeWkOukjc0SMbw"/>
-  <profile:Entity xmi:id="_i7-wMIksEeWDkO9NzaSg1w" base_Class="_fdB9EIksEeWDkO9NzaSg1w"/>
   <profile:WebMethod xmi:id="_ip_9cJ8nEeW1i9yDHqSdJA" base_Operation="_2lmpIJmpEeW_fqpvBCJSyg" RestMethod="GET" RestOutput="application/json" RestPath="getRecordList"/>
   <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="POST" RestOutput="application/json" RestPath="CreateRecord"/>
   <profile:WebMethod xmi:id="_yBIDAJ8oEeW1i9yDHqSdJA" base_Operation="_l5neoJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="DeleteRecord"/>
@@ -147,4 +144,7 @@
   <profile:FormItem xmi:id="_HRDiQKP8EeWgFfOu_pc1Gg" base_ViewProperty="_GEiEwKP8EeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_GEiEwKP8EeWgFfOu_pc1Gg" Value="Create"/>
   <profile:FormItem xmi:id="_H7DhgKP8EeWgFfOu_pc1Gg" base_ViewProperty="_FGFfgKP8EeWgFfOu_pc1Gg" Label="End" Type="text" base_Property="_FGFfgKP8EeWgFfOu_pc1Gg"/>
   <profile:FormItem xmi:id="_Ie51cKP8EeWgFfOu_pc1Gg" base_ViewProperty="_ENit8KP8EeWgFfOu_pc1Gg" Label="Start" Type="text" base_Property="_ENit8KP8EeWgFfOu_pc1Gg"/>
+  <profile:DAO xmi:id="_heg-kKQFEeWgFfOu_pc1Gg" base_Class="_fdB9EIksEeWDkO9NzaSg1w"/>
+  <profile:Entity xmi:id="_ieEXEKQFEeWgFfOu_pc1Gg" base_Class="_UVFLgHMjEeWkOukjc0SMbw"/>
+  <profile:Entity xmi:id="_jgonUKQFEeWgFfOu_pc1Gg" base_Class="_pqBlQHMiEeWkOukjc0SMbw"/>
 </xmi:XMI>

@@ -1,15 +1,15 @@
 
 // Start of user code imports
-package moreco.app.dao;
+package moreco.app.daos;
 
-import moreco.app.Record;
-import moreco.app.dao.TimeTrackerDAO;
+import moreco.app.entities.Record;
+import moreco.app.daos.TimeTrackerDAO;
 
 // End of user code
 
 /**
  * DAO: TimeTrackerDAO
- * package: moreco.app.dao
+ * package: moreco.app.daos
  */
 public class TimeTrackerDAO {
 

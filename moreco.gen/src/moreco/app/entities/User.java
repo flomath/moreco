@@ -1,13 +1,13 @@
 
 // Start of user code imports
-package moreco.app;
+package moreco.app.entities;
 
 
 // End of user code
 
 /**
  * class: User
- * package: moreco.app
+ * package: moreco.app.entities
  */
 public class User {
 

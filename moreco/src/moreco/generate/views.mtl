@@ -1,10 +1,11 @@
 [comment encoding = UTF-8 /]
-[module view('http://www.eclipse.org/uml2/5.0.0/UML') /]
+[module views('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
 [import moreco::generate::common::dataTypes /]
+[import moreco::generate::common::classHelper /]
 
-[template public generateView(aClass : Class)]
+[template public generateViews(aClass : Class)]
 [if (aClass.hasStereotype('View'))]
 	[file (aClass.namespace.toPath().concat(aClass.name.toUpperFirst()).concat('.html'), false, 'UTF-8')]
 

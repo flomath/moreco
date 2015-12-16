@@ -23,9 +23,3 @@ class.ownedOperation.ownedParameter
 [query public operationsParametersTypes(class : Class):Sequence(Classifier) = 
 class.operationsParameters().type->filter(Classifier)->select(not (name.endsWith('String')) and not (name.endsWith('Integer')) and not (name.endsWith('Float')) and not (name.endsWith('Long')) and not (name.endsWith('Double')) and not (name.endsWith('Boolean')) and not (name.startsWith('byte')) and not (name.endsWith('Object')))->asOrderedSet()->asSequence()
 /]
-
-[template public getCompleteName(namedElement:NamedElement) post (trim())]
-[let packages : Sequence(Package) = namedElement.ancestors(Package)->select(not oclIsTypeOf(Model))]
-	[packages.name->reverse()->sep('.')->toString().concat(if(packages->notEmpty())then '.' else '' endif).concat(namedElement.name)/]
-[/let]
-[/template]
