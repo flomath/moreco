@@ -1,7 +1,8 @@
 [comment encoding = UTF-8 /]
-[module view('http://www.eclipse.org/uml2/4.0.0/UML')]
+[module view('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
+[import moreco::generate::common::dataTypes /]
 
 [template public generateView(aClass : Class)]
 [if (aClass.hasStereotype('View'))]
@@ -18,19 +19,19 @@
   </head>
   <body>
 
-	<!-- Navigation -->
-	<div class="top-bar">
-	<div class="top-bar-left">
-		<ul class="menu">
-	[for (p: Property | aClass.attribute) separator('\n')]
-		[if (p.hasStereotype('NavigationItem'))]
-			<li><a href="[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'Link')/]" class="[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'CssClass')/]">[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'Label')/]</a></li>		
-		[/if]
-	[/for]
-		</ul>
-	</div>
-	</div>
-	<!-- /Navigation -->
+  	<!-- Navigation -->
+    <div class="top-bar" data-topbar role="navigation">
+      <div class="top-bar-left">
+    		<ul class="menu">
+        	[for (p: Property | aClass.attribute) separator('\n')]
+        		[if (p.hasStereotype('NavigationItem'))]
+        			<li class="[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'CssClass')/]"><a href="[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'Link')/]">[p.getValue(p.getAppliedStereotype('profile::NavigationItem'), 'Label')/]</a></li>		
+        		[/if]
+        	[/for]
+    		</ul>
+    	</div>
+  	</div>
+  	<!-- /Navigation -->
 
     <div class="row">
       <div class="large-12 columns">
@@ -38,16 +39,74 @@
       </div>
     </div>
 
+    <!-- Form -->
     <div class="row">
       <div class="large-12 columns">
         <div class="callout large">
-          bajsdfasdf
-		</div>
+          <form method="post" action="javascript:;" onsubmit="preSubmit();" class="">
+            [for (p: Property | aClass.attribute) separator('\n')]
+              [if (p.hasStereotype('FormItem'))]
+                <div class="row collapse">
+                  [if (p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Label') <> null and p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Label') <> '')]
+                    <div class="large-2 columns">
+                      <label for="[p.name/]" class="inline">[p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Label')/]</label>
+                    </div>
+                  [/if]
+                  <div class="large-10 columns">
+                    <input class="[p.getValue(p.getAppliedStereotype('profile::FormItem'), 'CssClass')/]"
+                      type="[p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Type')/]" name="[p.name/]" id="[p.name/]"
+                      placeholder="[p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Placeholder')/]"
+                      value="[p.getValue(p.getAppliedStereotype('profile::FormItem'), 'Value')/]"/>
+                  </div>
+                </div>
+              [/if]
+            [/for]
+          </form>
+        </div>
       </div>
     </div>
+    <!-- /Form -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <!-- Tables -->
+  	[for (p: Property | aClass.attribute) separator('\n')]
+    	[if (p.hasStereotype('Table'))]
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="large">
+              <table id="[p.name/]" class="table large-12">
+                <thead>
+                  [p.getValue(p.getAppliedStereotype('profile::Table'), 'Header')/]
+                </thead>
+                <tbody>
+                  <!-- Implement Custom Rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    	[/if]
+  	[/for]
+    <!-- /Tables -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/what-input.min.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+  
+      });
+      
+      function preSubmit() {
+        console.log("OnSubmit");
+      }
+
+      [for (o: Operation | aClass.ownedOperation) separator('\n')]
+        function [o.name/]([o.generateJSParameters()/]) {
+          console.log("[o.name/]");
+        }
+      [/for]
+    </script>
   </body>
 </html>
 

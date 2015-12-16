@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module classes('http://www.eclipse.org/uml2/4.0.0/UML')]
+[module classes('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
 
@@ -9,7 +9,6 @@
 package [aClass.namespace.name/];
 
 [comment]import via name > use real java types instead of our custom string types[/comment]
-import java.sql.Date;
 
 [for (classifier:Classifier|aClass.operationsParametersTypes())]
 import [classifier.getCompleteName()/];

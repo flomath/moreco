@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Overview</title>
+    <title>Create</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css" />
   </head>
   <body>
@@ -14,9 +14,11 @@
     <div class="top-bar" data-topbar role="navigation">
       <div class="top-bar-left">
     		<ul class="menu">
-        			<li class="active"><a href="overview.html">Overview</a></li>		
+        			<li class=""><a href="overview.html">Overview</a></li>		
 
-        			<li class=""><a href="create.html">Create</a></li>		
+        			<li class="active"><a href="create.html">Create</a></li>		
+
+
 
 
 
@@ -27,7 +29,7 @@
 
     <div class="row">
       <div class="large-12 columns">
-        <h1>Overview</h1>
+        <h1>Create</h1>
       </div>
     </div>
 
@@ -39,10 +41,49 @@
 
 
                 <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="User" class="inline">Username</label>
+                    </div>
                   <div class="large-10 columns">
                     <input class=""
-                      type="text" name="Search" id="Search"
-                      placeholder="Search..."
+                      type="text" name="User" id="User"
+                      placeholder=""
+                      value=""/>
+                  </div>
+                </div>
+
+                <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="Description" class="inline">Description</label>
+                    </div>
+                  <div class="large-10 columns">
+                    <input class=""
+                      type="text" name="Description" id="Description"
+                      placeholder=""
+                      value=""/>
+                  </div>
+                </div>
+
+                <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="Start" class="inline">Start</label>
+                    </div>
+                  <div class="large-10 columns">
+                    <input class=""
+                      type="text" name="Start" id="Start"
+                      placeholder=""
+                      value=""/>
+                  </div>
+                </div>
+
+                <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="End" class="inline">End</label>
+                    </div>
+                  <div class="large-10 columns">
+                    <input class=""
+                      type="text" name="End" id="End"
+                      placeholder=""
                       value=""/>
                   </div>
                 </div>
@@ -52,10 +93,9 @@
                     <input class="radius button"
                       type="submit" name="Submit" id="Submit"
                       placeholder=""
-                      value="Search"/>
+                      value="Create"/>
                   </div>
                 </div>
-
           </form>
         </div>
       </div>
@@ -67,24 +107,8 @@
 
 
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="large">
-              <table id="Table" class="table large-12">
-                <thead>
-                  <th>ID</th>
-<th>Description</th>
-<th>Start</th>
-<th>End</th>
-<th>&nbsp;</th>
-                </thead>
-                <tbody>
-                  <!-- Implement Custom Rows -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+
+
     <!-- /Tables -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
@@ -100,8 +124,8 @@
         console.log("OnSubmit");
       }
 
-        function DeleteRecord(id) {
-          console.log("DeleteRecord");
+        function CreateRecord() {
+          console.log("CreateRecord");
         }
     </script>
   </body>

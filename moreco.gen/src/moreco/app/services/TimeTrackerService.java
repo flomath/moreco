@@ -32,7 +32,7 @@ public class TimeTrackerService {
 	@Path("DeleteRecord")
 	@GET
 	@Produces("application/json")
-	public void DeleteRecord(String id){
+	public void DeleteRecord(Long id){
 		// Start of user code operation        
 		// TODO implement DeleteRecord
         throw new UnsupportedOperationException("Method not yet implemented");

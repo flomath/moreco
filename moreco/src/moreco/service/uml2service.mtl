@@ -1,5 +1,5 @@
-[comment encoding = Cp1252 /]
-[module uml2service('http://www.eclipse.org/uml2/4.0.0/UML')/]
+[comment encoding = UTF-8 /]
+[module uml2service('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [query public hasStereotype(arg0 : Element, arg1 : String) : Boolean
 	= invoke('moreco.service.UML2Service', 'hasStereotype(org.eclipse.uml2.uml.Element, java.lang.String)', Sequence{arg0, arg1})

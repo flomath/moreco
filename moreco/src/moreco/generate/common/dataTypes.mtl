@@ -1,4 +1,4 @@
-[module dataTypes('http://www.eclipse.org/uml2/4.0.0/UML')/]
+[module dataTypes('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
 [import moreco::service::uml2service /]
 
@@ -36,6 +36,14 @@ java.util.Collection<[type.toJavaType()/]>
 
 [template public genRawDeclare(parameter:Parameter)]
 [parameter.type.name/] [name.toLowerFirst()/]
+[/template]
+
+[template public generateJSParameters(operation:Operation)]
+[operation.getRealParameters()->filter(Parameter).genJSRawDeclare()->sep(', ')/]
+[/template]
+
+[template public genJSRawDeclare(parameter:Parameter)]
+[name.toLowerFirst()/]
 [/template]
 
 [template public getCompleteName(namedElement:NamedElement) post (trim())]
