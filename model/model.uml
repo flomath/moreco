@@ -40,10 +40,11 @@
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.dao">
       <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="TimeTrackerDAO" visibility="package">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_sWrKAKP8EeWgFfOu_pc1Gg" name="DB_HOST" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uxLdkKP8EeWgFfOu_pc1Gg" name="DB_USER" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xanlAKP8EeWgFfOu_pc1Gg" name="DB_PASSWORD" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_0IaA8KP8EeWgFfOu_pc1Gg" name="DB_NAME" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sWrKAKP8EeWgFfOu_pc1Gg" name="DB_HOST" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uxLdkKP8EeWgFfOu_pc1Gg" name="DB_USER" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xanlAKP8EeWgFfOu_pc1Gg" name="DB_PASSWORD" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0IaA8KP8EeWgFfOu_pc1Gg" name="DB_NAME" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tQhGoKP9EeWgFfOu_pc1Gg" name="Instance" visibility="private" isStatic="true" type="_fdB9EIksEeWDkO9NzaSg1w"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qT6AAIksEeWDkO9NzaSg1w" name="AddRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_u1nUEJmoEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZxYIIJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return"/>
@@ -51,7 +52,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_58JjoJmoEeW_fqpvBCJSyg" name="RemoveRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_BffZQJmpEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
         </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_7kgBgJmoEeW_fqpvBCJSyg" name="GetInstance">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7kgBgJmoEeW_fqpvBCJSyg" name="GetInstance" isStatic="true">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_cqV5UJ_xEeWBS5CrqAEn6w" type="_fdB9EIksEeWDkO9NzaSg1w" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords">

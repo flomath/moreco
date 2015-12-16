@@ -21,7 +21,7 @@ public class [aClass.name.toUpperFirst()/] {
 
 [comment]use own primitive types and act like they are basic java types![/comment]
 [for (p: Property | aClass.attribute) separator('\n')]
-	[p.visibility/] [p.type.name/] [p.name/];
+	[p.visibility/] [if p.isStatic]static [/if][p.type.name/] [p.name/];
 [/for]
 
 [for (p: Property | aClass.attribute) separator('\n')]

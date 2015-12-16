@@ -9,7 +9,55 @@ import moreco.app.dao.TimeTrackerDAO;
  */
 public class TimeTrackerDAO {
 
+	private String DB_HOST;
 
+	private String DB_USER;
+
+	private String DB_PASSWORD;
+
+	private String DB_NAME;
+
+	private static TimeTrackerDAO Instance;
+
+	public String getDB_HOST(){
+		return this.DB_HOST;
+	}
+
+	public void setDB_HOST(String DB_HOST){
+		this.DB_HOST = DB_HOST;
+	}
+
+	public String getDB_USER(){
+		return this.DB_USER;
+	}
+
+	public void setDB_USER(String DB_USER){
+		this.DB_USER = DB_USER;
+	}
+
+	public String getDB_PASSWORD(){
+		return this.DB_PASSWORD;
+	}
+
+	public void setDB_PASSWORD(String DB_PASSWORD){
+		this.DB_PASSWORD = DB_PASSWORD;
+	}
+
+	public String getDB_NAME(){
+		return this.DB_NAME;
+	}
+
+	public void setDB_NAME(String DB_NAME){
+		this.DB_NAME = DB_NAME;
+	}
+
+	public TimeTrackerDAO getInstance(){
+		return this.Instance;
+	}
+
+	public void setInstance(TimeTrackerDAO Instance){
+		this.Instance = Instance;
+	}
 
 	public Record AddRecord(Record record){
 		// Start of user code operation        
@@ -25,7 +73,7 @@ public class TimeTrackerDAO {
         // End of user code 
 	}
 
-	public TimeTrackerDAO GetInstance(){
+	public static TimeTrackerDAO GetInstance(){
 		// Start of user code operation        
 		// TODO implement GetInstance
         throw new UnsupportedOperationException("Method not yet implemented");
