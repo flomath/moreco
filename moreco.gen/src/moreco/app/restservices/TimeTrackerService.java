@@ -13,10 +13,10 @@ import javax.ws.rs.*;
 @Path("moreco/")
 public class TimeTrackerService {
 
-  @Path("getRecordList")
+  @Path("GetRecordList")
   @GET
   @Produces("application/json")
-  public String GetRecordList(String searchParam) {
+  public String GetRecordList(@QueryParam("searchParam") String searchParam) {
     // Start of user code GetRecordList        
     // TODO implement GetRecordList
     throw new UnsupportedOperationException("Method not yet implemented");
@@ -26,17 +26,17 @@ public class TimeTrackerService {
   @Path("CreateRecord")
   @POST
   @Produces("application/json")
-  public String CreateRecord(Long dateStart, Long dateEnd, String description, String user) {
+  public String CreateRecord(@QueryParam("dateStart") Long dateStart, @QueryParam("dateEnd") Long dateEnd, @QueryParam("description") String description, @QueryParam("user") String user) {
     // Start of user code CreateRecord        
     // TODO implement CreateRecord
     throw new UnsupportedOperationException("Method not yet implemented");
     // End of user code 
   }
 
-  @Path("DeleteRecord")
+  @Path("DeleteRecord/{id}")
   @GET
   @Produces("application/json")
-  public void DeleteRecord(Long id) {
+  public void DeleteRecord(@PathParam("id") Long id) {
     // Start of user code DeleteRecord        
     // TODO implement DeleteRecord
     throw new UnsupportedOperationException("Method not yet implemented");
