@@ -35,7 +35,11 @@ java.util.Collection<[type.toJavaType()/]>
 [/template]
 
 [template public genRawDeclare(parameter:Parameter)]
-[parameter.type.name/] [name.toLowerFirst()/]
+[parameter.genAnnotation()/][parameter.type.name/] [name.toLowerFirst()/]
+[/template]
+
+[template public genAnnotation(parameter:Parameter)]
+[if (parameter.hasStereotype('Annotation'))]@[parameter.getValue(parameter.getAppliedStereotype('profile::Annotation'), 'Type')/]("[parameter.getValue(parameter.getAppliedStereotype('profile::Annotation'), 'Name')/]") [/if]
 [/template]
 
 [template public generateJSParameters(operation:Operation)]

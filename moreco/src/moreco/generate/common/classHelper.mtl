@@ -20,11 +20,11 @@ import [classifier.getCompleteName()/];
 [/for]
 
 [for (p: Property | aClass.attribute) separator('\n')]
-  public [p.type.name/] get[p.name.toUpperFirst()/](){
+  public [if p.isStatic]static [/if][p.type.name/] get[p.name.toUpperFirst()/]() {
     return this.[p.name/];
   }
 
-  public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]){
+  public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]) {
     this.[p.name/] = [p.name/];
   }
 [/for]
@@ -44,4 +44,19 @@ import [classifier.getCompleteName()/];
     // [/protected] 
   }
 [/for]
+[/template]
+
+[template public generateSingleton(aClass : Class)]
+[comment]use own primitive types and act like they are basic java types![/comment]
+  private static [aClass.name.toUpperFirst()/] _instance;
+
+  private [aClass.name.toUpperFirst()/]() {}
+
+  public static [aClass.name.toUpperFirst()/] getInstance() {
+    if (_instance == null) {
+      _instance = new [aClass.name.toUpperFirst()/]();
+    }
+
+    return this._instance;
+  }
 [/template]

@@ -289,6 +289,44 @@
     <element xmi:type="uml:Stereotype" href="morecoprof.profile.uml#_Wwc6MKPVEeWgFfOu_pc1Gg"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WwdhVaPVEeWgFfOu_pc1Gg" x="551" y="565"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_5PrwoKSoEeWyx9oOQYwmGw" type="1031">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5PrwoqSoEeWyx9oOQYwmGw" type="1084"/>
+    <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Prwo6SoEeWyx9oOQYwmGw" x="811" y="440"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_5QBH06SoEeWyx9oOQYwmGw" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_5QBH1KSoEeWyx9oOQYwmGw" showTitle="true"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_5QBH1qSoEeWyx9oOQYwmGw" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5QBH1aSoEeWyx9oOQYwmGw" x="359" y="358"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_E_JocKSpEeWyx9oOQYwmGw" type="1026">
+    <children xmi:type="notation:DecorationNode" xmi:id="_E_JocqSpEeWyx9oOQYwmGw" type="1034"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_E_KPgKSpEeWyx9oOQYwmGw" type="1071">
+      <children xmi:type="notation:Shape" xmi:id="_GRCHEKSpEeWyx9oOQYwmGw" type="3002">
+        <element xmi:type="uml:Property" href="morecoprof.profile.uml#_GQsI0KSpEeWyx9oOQYwmGw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_GRCHEaSpEeWyx9oOQYwmGw"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_HgyewKSpEeWyx9oOQYwmGw" type="3002">
+        <element xmi:type="uml:Property" href="morecoprof.profile.uml#_HgjOMKSpEeWyx9oOQYwmGw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HgyewaSpEeWyx9oOQYwmGw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_E_KPgaSpEeWyx9oOQYwmGw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_E_KPgqSpEeWyx9oOQYwmGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_E_KPg6SpEeWyx9oOQYwmGw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E_KPhKSpEeWyx9oOQYwmGw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_E_KPhaSpEeWyx9oOQYwmGw" type="1019">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_E_KPhqSpEeWyx9oOQYwmGw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_E_KPh6SpEeWyx9oOQYwmGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_E_KPiKSpEeWyx9oOQYwmGw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E_KPiaSpEeWyx9oOQYwmGw"/>
+    </children>
+    <element xmi:type="uml:Stereotype" href="morecoprof.profile.uml#_E_HMMKSpEeWyx9oOQYwmGw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E_JocaSpEeWyx9oOQYwmGw" x="771" y="565"/>
+  </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_LmmQoeEkEeSZw71nfpMpew" name="diagram_compatibility_version" stringValue="1.1.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_LmmQouEkEeSZw71nfpMpew"/>
   <styles xmi:type="style:PapyrusViewStyle" xmi:id="_LmmQo-EkEeSZw71nfpMpew">
@@ -403,5 +441,22 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bY320qPVEeWgFfOu_pc1Gg" points="[-4, -2, 211, 107]$[-196, -106, 19, 3]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bZlogKPVEeWgFfOu_pc1Gg" id="(0.21705426356589147,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bZmPkKPVEeWgFfOu_pc1Gg" id="(1.0,0.78)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5QBu4KSoEeWyx9oOQYwmGw" type="StereotypeCommentLink" source="_5PrwoKSoEeWyx9oOQYwmGw" target="_5QBH06SoEeWyx9oOQYwmGw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_5QBu4aSoEeWyx9oOQYwmGw"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_5QBu5aSoEeWyx9oOQYwmGw" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5QBu4qSoEeWyx9oOQYwmGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5QBu46SoEeWyx9oOQYwmGw"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5QBu5KSoEeWyx9oOQYwmGw"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Kpn38KSpEeWyx9oOQYwmGw" type="1013" source="_E_JocKSpEeWyx9oOQYwmGw" target="_5PrwoKSoEeWyx9oOQYwmGw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_Kpn38aSpEeWyx9oOQYwmGw"/>
+    <element xmi:type="uml:Extension" href="morecoprof.profile.uml#_KpUV8KSpEeWyx9oOQYwmGw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Kpn38qSpEeWyx9oOQYwmGw" points="[-1, -3, -22, 100]$[-29, -108, -50, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KqYF4KSpEeWyx9oOQYwmGw" id="(0.6071428571428571,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KqYs8KSpEeWyx9oOQYwmGw" id="(0.28,1.0)"/>
   </edges>
 </notation:Diagram>
