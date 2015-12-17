@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css" />
+	<link rel="stylesheet" href="assets/foundation-icons.css" />
+	<link rel="stylesheet" href="assets/foundation-datepicker.min.css" />
+	<style>
+	.menu li.active a {
+		color: red;
+	}
+	</style>
   </head>
   <body>
 
@@ -24,6 +31,9 @@
 
     		</ul>
     	</div>
+		<div class="top-bar-right">
+			<h2>moreco <i class="fi-mountains"></i></h2>
+		</div>
   	</div>
   	<!-- /Navigation -->
 
@@ -114,9 +124,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/what-input.min.js"></script>
+   	<script src="assets/foundation-datepicker.min.js"></script>
 
     <script type="text/javascript">
       $(function() {
+		$('.datepicker').fdatepicker({
+			format: 'mm-dd-yyyy hh:ii',
+			disableDblClickSelection: true,
+			pickTime: true
+		});
 
         //Start of user code onLoad
         // TODO: Implement
