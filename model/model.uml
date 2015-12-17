@@ -138,8 +138,8 @@
   <profile:FormItem xmi:id="_4JMLQKP7EeWgFfOu_pc1Gg" base_ViewProperty="_0aNYEKP7EeWgFfOu_pc1Gg" Label="Username" Type="text" base_Property="_0aNYEKP7EeWgFfOu_pc1Gg" Placeholder=""/>
   <profile:FormItem xmi:id="_8l8DYKP7EeWgFfOu_pc1Gg" base_ViewProperty="_7rGLwKP7EeWgFfOu_pc1Gg" Label="Description" Type="text" base_Property="_7rGLwKP7EeWgFfOu_pc1Gg"/>
   <profile:FormItem xmi:id="_HRDiQKP8EeWgFfOu_pc1Gg" base_ViewProperty="_GEiEwKP8EeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_GEiEwKP8EeWgFfOu_pc1Gg" Value="Create"/>
-  <profile:FormItem xmi:id="_H7DhgKP8EeWgFfOu_pc1Gg" base_ViewProperty="_FGFfgKP8EeWgFfOu_pc1Gg" Label="End" Type="text" base_Property="_FGFfgKP8EeWgFfOu_pc1Gg"/>
-  <profile:FormItem xmi:id="_Ie51cKP8EeWgFfOu_pc1Gg" base_ViewProperty="_ENit8KP8EeWgFfOu_pc1Gg" Label="Start" Type="text" base_Property="_ENit8KP8EeWgFfOu_pc1Gg"/>
+  <profile:FormItem xmi:id="_H7DhgKP8EeWgFfOu_pc1Gg" base_ViewProperty="_FGFfgKP8EeWgFfOu_pc1Gg" CssClass="datepicker" Label="End" Type="text" base_Property="_FGFfgKP8EeWgFfOu_pc1Gg"/>
+  <profile:FormItem xmi:id="_Ie51cKP8EeWgFfOu_pc1Gg" base_ViewProperty="_ENit8KP8EeWgFfOu_pc1Gg" CssClass="datepicker" Label="Start" Type="text" base_Property="_ENit8KP8EeWgFfOu_pc1Gg"/>
   <profile:DAO xmi:id="_heg-kKQFEeWgFfOu_pc1Gg" base_Class="_fdB9EIksEeWDkO9NzaSg1w"/>
   <profile:Entity xmi:id="_ieEXEKQFEeWgFfOu_pc1Gg" base_Class="_UVFLgHMjEeWkOukjc0SMbw"/>
   <profile:Entity xmi:id="_jgonUKQFEeWgFfOu_pc1Gg" base_Class="_pqBlQHMiEeWkOukjc0SMbw"/>

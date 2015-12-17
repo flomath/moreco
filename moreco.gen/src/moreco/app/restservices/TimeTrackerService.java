@@ -10,7 +10,7 @@ import javax.ws.rs.*;
  * RestService: TimeTrackerService
  * package: moreco.app.restservices
  */
-@Path("moreco/")
+@Path("moreco")
 public class TimeTrackerService {
 
   @Path("GetRecordList")
@@ -19,7 +19,8 @@ public class TimeTrackerService {
   public String GetRecordList(@QueryParam("searchParam") String searchParam) {
     // Start of user code GetRecordList        
     // TODO implement GetRecordList
-    throw new UnsupportedOperationException("Method not yet implemented");
+    return "test";
+    //throw new UnsupportedOperationException("Method not yet implemented");
     // End of user code 
   }
 

@@ -1,7 +1,6 @@
 [comment encoding = UTF-8 /]
 [module main('http://www.eclipse.org/uml2/5.0.0/UML') /]
 
-[import moreco::generate::main /]
 [import moreco::generate::entities /]
 [import moreco::generate::restservices /]
 [import moreco::generate::daos /]
@@ -11,7 +10,6 @@
 [comment @main /]
 	[for (aPackage : Package | aModel.getNestedPackages())]
 		[for (aClass : Class | aPackage.packagedElement->filter(Class))]
-		 	[aClass.generateMain()/]
 			[aClass.generateClasses()/]
 			[aClass.generateRestServices()/]
 			[aClass.generateDAOs()/]

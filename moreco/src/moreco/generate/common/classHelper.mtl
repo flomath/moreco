@@ -57,6 +57,6 @@ import [classifier.getCompleteName()/];
       _instance = new [aClass.name.toUpperFirst()/]();
     }
 
-    return this._instance;
+    return _instance;
   }
 [/template]

@@ -21,7 +21,7 @@ public class RecordDAO {
       _instance = new RecordDAO();
     }
 
-    return this._instance;
+    return _instance;
   }
 
   private String DB_HOST;
