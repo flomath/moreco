@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="testo">
+    <output-path>$PROJECT_DIR$/out/artifacts/testo</output-path>
+    <root id="archive" name="testo.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="moreco.gen" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.sun.jersey:jersey-bundle:1.9" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.5" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="moreco.gen/web/Web" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

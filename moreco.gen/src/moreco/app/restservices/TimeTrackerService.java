@@ -3,6 +3,9 @@
 package moreco.app.restservices;
 
 
+import com.google.gson.Gson;
+import moreco.app.daos.RecordDAO;
+
 import javax.ws.rs.*;
 // End of user code
 
@@ -19,7 +22,12 @@ public class TimeTrackerService {
   public String GetRecordList(@QueryParam("searchParam") String searchParam) {
     // Start of user code GetRecordList        
     // TODO implement GetRecordList
-    return "test";
+
+    RecordDAO records = RecordDAO.getInstance();
+    Gson gson = new Gson();
+
+    return gson.toJson(records.GetRecords(""));
+
     //throw new UnsupportedOperationException("Method not yet implemented");
     // End of user code 
   }
