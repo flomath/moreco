@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_b1MzIKSpEeWyx9oOQYwmGw/28" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_b1MzIKSpEeWyx9oOQYwmGw/28 ../MetaProfile/morecoprof.profile.uml#_b1NaMKSpEeWyx9oOQYwmGw">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_9VJIwKu8EeWAK-bLokT-iQ/30" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_9VJIwKu8EeWAK-bLokT-iQ/30 ../MetaProfile/morecoprof.profile.uml#_9VKW4Ku8EeWAK-bLokT-iQ">
   <uml:Model xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_4XwfMISgEeWmSZFgLfynHg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
@@ -39,10 +39,6 @@
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_5ZFMMIkoEeWDkO9NzaSg1w" name="String"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_dYFCwIksEeWDkO9NzaSg1w" name="moreco.app.daos">
       <packagedElement xmi:type="uml:Class" xmi:id="_fdB9EIksEeWDkO9NzaSg1w" name="RecordDAO" visibility="package">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_sWrKAKP8EeWgFfOu_pc1Gg" name="DB_HOST" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uxLdkKP8EeWgFfOu_pc1Gg" name="DB_USER" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xanlAKP8EeWgFfOu_pc1Gg" name="DB_PASSWORD" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_0IaA8KP8EeWgFfOu_pc1Gg" name="DB_NAME" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qT6AAIksEeWDkO9NzaSg1w" name="AddRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_u1nUEJmoEeW_fqpvBCJSyg" name="record" type="_UVFLgHMjEeWkOukjc0SMbw"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZxYIIJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return"/>
@@ -52,7 +48,19 @@
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGIhAJ_xEeWBS5CrqAEn6w" name="searchParam" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ilH1sJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ilH1sJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7BhY8Ku_EeWAK-bLokT-iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Bj1MKu_EeWAK-bLokT-iQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_E1YR8Ku7EeWAK-bLokT-iQ" name="DatabaseConnection">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_riHogKu7EeWAK-bLokT-iQ" name="query">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPj7cKu8EeWAK-bLokT-iQ" type="_GC1uIKu8EeWAK-bLokT-iQ" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0s12MKu8EeWAK-bLokT-iQ" name="query" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FTSrEKu9EeWAK-bLokT-iQ" name="insert">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_IH3EcKu9EeWAK-bLokT-iQ" name="query" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         </ownedOperation>
       </packagedElement>
     </packagedElement>
@@ -97,6 +105,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_TRMJwKPwEeWgFfOu_pc1Gg" name="CreateRecord"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_GC1uIKu8EeWAK-bLokT-iQ" name="ResultSet"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hM1zkYSnEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
@@ -104,15 +113,15 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_of-f4IkOEeWDkO9NzaSg1w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c8DGcKSpEeWyx9oOQYwmGw" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c8DGcaSpEeWyx9oOQYwmGw" key="Version" value="1.0.22"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c8DGcqSpEeWyx9oOQYwmGw" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c8DGc6SpEeWyx9oOQYwmGw" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c8DGdKSpEeWyx9oOQYwmGw" key="Date" value="2015-12-17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c8DGdaSpEeWyx9oOQYwmGw" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_--ynIKu8EeWAK-bLokT-iQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynIau8EeWAK-bLokT-iQ" key="Version" value="1.0.24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynIqu8EeWAK-bLokT-iQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynI6u8EeWAK-bLokT-iQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynJKu8EeWAK-bLokT-iQ" key="Date" value="2015-12-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynJau8EeWAK-bLokT-iQ" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogAVEIkOEeWDkO9NzaSg1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_b1NaMKSpEeWyx9oOQYwmGw"/>
+        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_9VKW4Ku8EeWAK-bLokT-iQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../MetaProfile/morecoprof.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
     </profileApplication>
@@ -149,4 +158,8 @@
   <profile:Annotation xmi:id="_qFzK8KSpEeWyx9oOQYwmGw" Type="QueryParam" Name="description" base_Parameter="_eectkJ8oEeW1i9yDHqSdJA"/>
   <profile:Annotation xmi:id="_s2FhQKSpEeWyx9oOQYwmGw" Type="QueryParam" Name="user" base_Parameter="_fpNQgJ8oEeW1i9yDHqSdJA"/>
   <profile:Annotation xmi:id="_wIlMwKSpEeWyx9oOQYwmGw" Type="PathParam" Name="id" base_Parameter="_oPvogJ8oEeW1i9yDHqSdJA"/>
+  <profile:DAO xmi:id="_HctgkKu7EeWAK-bLokT-iQ" base_Class="_E1YR8Ku7EeWAK-bLokT-iQ"/>
+  <profile:Database xmi:id="_bHiP8Ku8EeWAK-bLokT-iQ" base_Class="_E1YR8Ku7EeWAK-bLokT-iQ"/>
+  <profile:ThrowException xmi:id="_JXF3sKu9EeWAK-bLokT-iQ" base_Operation="_FTSrEKu9EeWAK-bLokT-iQ" ExceptionName="SQLException"/>
+  <profile:ThrowException xmi:id="_QXv3AKu9EeWAK-bLokT-iQ" base_Operation="_riHogKu7EeWAK-bLokT-iQ" ExceptionName="SQLException"/>
 </xmi:XMI>

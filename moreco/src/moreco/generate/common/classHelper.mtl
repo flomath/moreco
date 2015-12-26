@@ -37,7 +37,7 @@ import [classifier.getCompleteName()/];
   @[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestMethod')/]
   @Produces("[o.getValue(o.getAppliedStereotype('profile::WebMethod'), 'RestOutput')/]")
 [/if]
-  [o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/]) {
+  [o.visibility/] [if o.isStatic]static [/if][o.generateReturn()/] [o.name/]([o.generateRawParameters()/])[if (o.hasStereotype('ThrowException'))] throws [o.getValue(o.getAppliedStereotype('profile::ThrowException'), 'ExceptionName')/][/if] {
     // [protected (o.name)]        
     // TODO implement [o.name/]
     throw new UnsupportedOperationException("Method not yet implemented");

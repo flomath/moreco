@@ -4,6 +4,9 @@ package moreco.app.daos;
 
 import moreco.app.entities.Record;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 // End of user code
 
 /**
@@ -24,45 +27,7 @@ public class RecordDAO {
     return _instance;
   }
 
-  private String DB_HOST;
 
-  private String DB_USER;
-
-  private String DB_PASSWORD;
-
-  private String DB_NAME;
-
-  public String getDB_HOST() {
-    return this.DB_HOST;
-  }
-
-  public void setDB_HOST(String DB_HOST) {
-    this.DB_HOST = DB_HOST;
-  }
-
-  public String getDB_USER() {
-    return this.DB_USER;
-  }
-
-  public void setDB_USER(String DB_USER) {
-    this.DB_USER = DB_USER;
-  }
-
-  public String getDB_PASSWORD() {
-    return this.DB_PASSWORD;
-  }
-
-  public void setDB_PASSWORD(String DB_PASSWORD) {
-    this.DB_PASSWORD = DB_PASSWORD;
-  }
-
-  public String getDB_NAME() {
-    return this.DB_NAME;
-  }
-
-  public void setDB_NAME(String DB_NAME) {
-    this.DB_NAME = DB_NAME;
-  }
 
 
   public Record AddRecord(Record record) {
@@ -80,10 +45,25 @@ public class RecordDAO {
   }
 
   public Record GetRecords(String searchParam) {
-    // Start of user code GetRecords        
-    // TODO implement GetRecords
-    throw new UnsupportedOperationException("Method not yet implemented");
-    // End of user code 
+    Record r = null;
+
+    try {
+
+      ResultSet rs = DatabaseConnection.getInstance().query("select * from record");
+
+      while (rs.next()) {
+        r = new Record();
+        r.setDescription(rs.getString("description"));
+        r.setID(rs.getLong("id"));
+        r.setStart(rs.getLong("start"));
+        r.setEnd(rs.getLong("end"));
+      }
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+
+    return r;
   }
 
 

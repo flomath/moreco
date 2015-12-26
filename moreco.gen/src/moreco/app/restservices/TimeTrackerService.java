@@ -13,7 +13,7 @@ import javax.ws.rs.*;
  * RestService: TimeTrackerService
  * package: moreco.app.restservices
  */
-@Path("moreco")
+@Path("moreco/")
 public class TimeTrackerService {
 
   @Path("GetRecordList")

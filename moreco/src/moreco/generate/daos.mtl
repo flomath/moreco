@@ -11,6 +11,9 @@
 
 // [protected('imports')]
 [aClass.generateImports()/]
+[if (aClass.hasStereotype('Database'))]
+import java.sql.*;
+[/if]
 // [/protected]
 
 /**
