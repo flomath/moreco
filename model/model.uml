@@ -19,20 +19,11 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kJYxwHMjEeWkOukjc0SMbw" name="Description" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w" isUnique="false"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_oS16cHMjEeWkOukjc0SMbw" name="Start" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w" isUnique="false"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_yzOwAHMjEeWkOukjc0SMbw" name="End" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SoxNoqydEeWS4ODjRUtHTA" name="user" type="_pqBlQHMiEeWkOukjc0SMbw" association="_SowmkKydEeWS4ODjRUtHTA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_pqBlQHMiEeWkOukjc0SMbw" name="User">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3RNzsHMiEeWkOukjc0SMbw" name="ID" visibility="private" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_645FAHMiEeWkOukjc0SMbw" name="Username" visibility="private" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_ELtewHMkEeWkOukjc0SMbw" memberEnd="_ELuF0nMkEeWkOukjc0SMbw _ELus4HMkEeWkOukjc0SMbw" navigableOwnedEnd="_ELuF0nMkEeWkOukjc0SMbw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ELuF0HMkEeWkOukjc0SMbw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ELuF0XMkEeWkOukjc0SMbw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ELus4HMkEeWkOukjc0SMbw" name="user" type="_pqBlQHMiEeWkOukjc0SMbw" association="_ELtewHMkEeWkOukjc0SMbw"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ELuF0nMkEeWkOukjc0SMbw" name="record" type="_UVFLgHMjEeWkOukjc0SMbw" aggregation="composite" association="_ELtewHMkEeWkOukjc0SMbw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQL8YHMkEeWkOukjc0SMbw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQO_sHMkEeWkOukjc0SMbw" value="*"/>
-        </ownedEnd>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_UzFfsIkoEeWDkO9NzaSg1w" name="Long"/>
@@ -49,7 +40,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGIhAJ_xEeWBS5CrqAEn6w" name="searchParam" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_ilH1sJ_xEeWBS5CrqAEn6w" type="_UVFLgHMjEeWkOukjc0SMbw" direction="return">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7BhY8Ku_EeWAK-bLokT-iQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7BhY8Ku_EeWAK-bLokT-iQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Bj1MKu_EeWAK-bLokT-iQ" value="*"/>
           </ownedParameter>
         </ownedOperation>
@@ -106,6 +97,12 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_GC1uIKu8EeWAK-bLokT-iQ" name="ResultSet"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SowmkKydEeWS4ODjRUtHTA" memberEnd="_SoxNoqydEeWS4ODjRUtHTA _Sox0sKydEeWS4ODjRUtHTA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SoxNoKydEeWS4ODjRUtHTA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SoxNoaydEeWS4ODjRUtHTA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Sox0sKydEeWS4ODjRUtHTA" name="record" type="_UVFLgHMjEeWkOukjc0SMbw" association="_SowmkKydEeWS4ODjRUtHTA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hM1zkYSnEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
@@ -130,7 +127,7 @@
   <profile:Scannable xmi:id="_jYl54IkPEeWDkO9NzaSg1w" base_Package="_OZ9PQISaEeWmSZFgLfynHg"/>
   <profile:Scannable xmi:id="_3YbKwIkiEeWDkO9NzaSg1w" base_Package="_WTq2IISdEeWmSZFgLfynHg"/>
   <profile:WebMethod xmi:id="_ip_9cJ8nEeW1i9yDHqSdJA" base_Operation="_2lmpIJmpEeW_fqpvBCJSyg" RestMethod="GET" RestOutput="application/json" RestPath="GetRecordList"/>
-  <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="POST" RestOutput="application/json" RestPath="CreateRecord"/>
+  <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="CreateRecord"/>
   <profile:WebMethod xmi:id="_yBIDAJ8oEeW1i9yDHqSdJA" base_Operation="_l5neoJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="DeleteRecord/{id}"/>
   <profile:Scannable xmi:id="_Q9dYUJ8pEeW1i9yDHqSdJA" base_Package="_JkDFkJmpEeW_fqpvBCJSyg"/>
   <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/"/>

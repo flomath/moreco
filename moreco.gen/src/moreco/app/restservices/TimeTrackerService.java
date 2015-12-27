@@ -5,6 +5,8 @@ package moreco.app.restservices;
 
 import com.google.gson.Gson;
 import moreco.app.daos.RecordDAO;
+import moreco.app.entities.Record;
+import moreco.app.entities.User;
 
 import javax.ws.rs.*;
 // End of user code
@@ -13,7 +15,7 @@ import javax.ws.rs.*;
  * RestService: TimeTrackerService
  * package: moreco.app.restservices
  */
-@Path("moreco/")
+@Path("moreco/api/")
 public class TimeTrackerService {
 
   @Path("GetRecordList")
@@ -33,13 +35,24 @@ public class TimeTrackerService {
   }
 
   @Path("CreateRecord")
-  @POST
+  @GET
   @Produces("application/json")
   public String CreateRecord(@QueryParam("dateStart") Long dateStart, @QueryParam("dateEnd") Long dateEnd, @QueryParam("description") String description, @QueryParam("user") String user) {
-    // Start of user code CreateRecord        
-    // TODO implement CreateRecord
-    throw new UnsupportedOperationException("Method not yet implemented");
-    // End of user code 
+
+    Record r = new Record();
+    r.setStart(dateStart);
+    r.setEnd(dateEnd);
+    r.setDescription(description);
+
+    // TODO !
+    User u = new User();
+    u.setUsername(user);
+    r.setUser(u);
+
+    RecordDAO records = RecordDAO.getInstance();
+
+    Gson gson = new Gson();
+    return gson.toJson(records.AddRecord(r));
   }
 
   @Path("DeleteRecord/{id}")

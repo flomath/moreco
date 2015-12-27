@@ -41,8 +41,6 @@ public class DatabaseConnection {
   }
 
 
-
-
   public ResultSet query(String query) throws SQLException {
     statement = _instance.conn.createStatement();
     ResultSet res = statement.executeQuery(query);

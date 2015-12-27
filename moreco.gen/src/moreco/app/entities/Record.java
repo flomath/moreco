@@ -19,6 +19,8 @@ public class Record {
 
   private Long End;
 
+  public User user;
+
   public Long getID() {
     return this.ID;
   }
@@ -49,6 +51,14 @@ public class Record {
 
   public void setEnd(Long End) {
     this.End = End;
+  }
+
+  public User getUser() {
+    return this.user;
+  }
+
+  public void setUser(User user) {
+    this.user = user;
   }
 
 
