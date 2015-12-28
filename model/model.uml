@@ -50,8 +50,25 @@
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_yPj7cKu8EeWAK-bLokT-iQ" type="_GC1uIKu8EeWAK-bLokT-iQ" direction="return"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_0s12MKu8EeWAK-bLokT-iQ" name="query" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_FTSrEKu9EeWAK-bLokT-iQ" name="insert">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_IH3EcKu9EeWAK-bLokT-iQ" name="query" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_2c5ZoK2gEeWvZ47xEYa8hg" name="insert">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_9lxg0K2gEeWvZ47xEYa8hg" name="query" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="__QcS4K2gEeWvZ47xEYa8hg" type="_GC1uIKu8EeWAK-bLokT-iQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iNt6oK2MEeWvZ47xEYa8hg" name="UserDAO">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_l1boMK2MEeWvZ47xEYa8hg" name="AddUser">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_vK6w4K2MEeWvZ47xEYa8hg" name="user" type="_pqBlQHMiEeWkOukjc0SMbw"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_yq9JIK2MEeWvZ47xEYa8hg" type="_pqBlQHMiEeWkOukjc0SMbw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_56GQYK2MEeWvZ47xEYa8hg" name="GetUsers">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Eoa0QK2NEeWvZ47xEYa8hg" type="_pqBlQHMiEeWkOukjc0SMbw" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__mVlAK2NEeWvZ47xEYa8hg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__meH4K2NEeWvZ47xEYa8hg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_N5eTcK2OEeWvZ47xEYa8hg" name="GetUser">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Sg4jcK2OEeWvZ47xEYa8hg" name="user" type="_pqBlQHMiEeWkOukjc0SMbw"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_V0H10K2OEeWvZ47xEYa8hg" type="_pqBlQHMiEeWkOukjc0SMbw" direction="return"/>
         </ownedOperation>
       </packagedElement>
     </packagedElement>
@@ -96,7 +113,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_TRMJwKPwEeWgFfOu_pc1Gg" name="CreateRecord"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_GC1uIKu8EeWAK-bLokT-iQ" name="ResultSet"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_GC1uIKu8EeWAK-bLokT-iQ" name="PreparedStatement"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_SowmkKydEeWS4ODjRUtHTA" memberEnd="_SoxNoqydEeWS4ODjRUtHTA _Sox0sKydEeWS4ODjRUtHTA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SoxNoKydEeWS4ODjRUtHTA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SoxNoaydEeWS4ODjRUtHTA" key="nature" value="UML_Nature"/>
@@ -127,10 +144,10 @@
   <profile:Scannable xmi:id="_jYl54IkPEeWDkO9NzaSg1w" base_Package="_OZ9PQISaEeWmSZFgLfynHg"/>
   <profile:Scannable xmi:id="_3YbKwIkiEeWDkO9NzaSg1w" base_Package="_WTq2IISdEeWmSZFgLfynHg"/>
   <profile:WebMethod xmi:id="_ip_9cJ8nEeW1i9yDHqSdJA" base_Operation="_2lmpIJmpEeW_fqpvBCJSyg" RestMethod="GET" RestOutput="application/json" RestPath="GetRecordList"/>
-  <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="CreateRecord"/>
+  <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="POST" RestOutput="application/json" RestPath="CreateRecord"/>
   <profile:WebMethod xmi:id="_yBIDAJ8oEeW1i9yDHqSdJA" base_Operation="_l5neoJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="DeleteRecord/{id}"/>
   <profile:Scannable xmi:id="_Q9dYUJ8pEeW1i9yDHqSdJA" base_Package="_JkDFkJmpEeW_fqpvBCJSyg"/>
-  <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/"/>
+  <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/api/"/>
   <profile:View xmi:id="_sjaG8J_1EeWBS5CrqAEn6w" base_Class="_SxIjEJ_yEeWBS5CrqAEn6w" base_ViewProperty="_SxIjEJ_yEeWBS5CrqAEn6w" Title="Overview"/>
   <profile:NavigationItem xmi:id="_-hAU8J_1EeWBS5CrqAEn6w" CssClass="active" Label="Overview" Link="overview.html" base_Property="_AWPVEJ_yEeWBS5CrqAEn6w"/>
   <profile:NavigationItem xmi:id="_ELmgQJ_2EeWBS5CrqAEn6w" Label="Create" Link="create.html" base_Property="_NJygEJ_yEeWBS5CrqAEn6w"/>
@@ -144,19 +161,20 @@
   <profile:FormItem xmi:id="_4JMLQKP7EeWgFfOu_pc1Gg" base_ViewProperty="_0aNYEKP7EeWgFfOu_pc1Gg" Label="Username" Type="text" base_Property="_0aNYEKP7EeWgFfOu_pc1Gg" Placeholder=""/>
   <profile:FormItem xmi:id="_8l8DYKP7EeWgFfOu_pc1Gg" base_ViewProperty="_7rGLwKP7EeWgFfOu_pc1Gg" Label="Description" Type="text" base_Property="_7rGLwKP7EeWgFfOu_pc1Gg"/>
   <profile:FormItem xmi:id="_HRDiQKP8EeWgFfOu_pc1Gg" base_ViewProperty="_GEiEwKP8EeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_GEiEwKP8EeWgFfOu_pc1Gg" Value="Create"/>
-  <profile:FormItem xmi:id="_H7DhgKP8EeWgFfOu_pc1Gg" base_ViewProperty="_FGFfgKP8EeWgFfOu_pc1Gg" CssClass="datepicker" Label="End" Type="text" base_Property="_FGFfgKP8EeWgFfOu_pc1Gg"/>
-  <profile:FormItem xmi:id="_Ie51cKP8EeWgFfOu_pc1Gg" base_ViewProperty="_ENit8KP8EeWgFfOu_pc1Gg" CssClass="datepicker" Label="Start" Type="text" base_Property="_ENit8KP8EeWgFfOu_pc1Gg"/>
+  <profile:FormItem xmi:id="_H7DhgKP8EeWgFfOu_pc1Gg" base_ViewProperty="_FGFfgKP8EeWgFfOu_pc1Gg" CssClass="fdatepicker" Label="End" Type="text" base_Property="_FGFfgKP8EeWgFfOu_pc1Gg"/>
+  <profile:FormItem xmi:id="_Ie51cKP8EeWgFfOu_pc1Gg" base_ViewProperty="_ENit8KP8EeWgFfOu_pc1Gg" CssClass="fdatepicker" Label="Start" Type="text" base_Property="_ENit8KP8EeWgFfOu_pc1Gg"/>
   <profile:DAO xmi:id="_heg-kKQFEeWgFfOu_pc1Gg" base_Class="_fdB9EIksEeWDkO9NzaSg1w"/>
   <profile:Entity xmi:id="_ieEXEKQFEeWgFfOu_pc1Gg" base_Class="_UVFLgHMjEeWkOukjc0SMbw"/>
   <profile:Entity xmi:id="_jgonUKQFEeWgFfOu_pc1Gg" base_Class="_pqBlQHMiEeWkOukjc0SMbw"/>
   <profile:Annotation xmi:id="_WHNVkKSpEeWyx9oOQYwmGw" Type="QueryParam" Name="searchParam" base_Parameter="_B0ylgJ8oEeW1i9yDHqSdJA"/>
-  <profile:Annotation xmi:id="_jIEj0KSpEeWyx9oOQYwmGw" Type="QueryParam" Name="dateStart" base_Parameter="_XKq98J8oEeW1i9yDHqSdJA"/>
-  <profile:Annotation xmi:id="_nKiTsKSpEeWyx9oOQYwmGw" Type="QueryParam" Name="dateEnd" base_Parameter="_b7bXMJ8oEeW1i9yDHqSdJA"/>
-  <profile:Annotation xmi:id="_qFzK8KSpEeWyx9oOQYwmGw" Type="QueryParam" Name="description" base_Parameter="_eectkJ8oEeW1i9yDHqSdJA"/>
-  <profile:Annotation xmi:id="_s2FhQKSpEeWyx9oOQYwmGw" Type="QueryParam" Name="user" base_Parameter="_fpNQgJ8oEeW1i9yDHqSdJA"/>
+  <profile:Annotation xmi:id="_jIEj0KSpEeWyx9oOQYwmGw" Type="FormParam" Name="dateStart" base_Parameter="_XKq98J8oEeW1i9yDHqSdJA"/>
+  <profile:Annotation xmi:id="_nKiTsKSpEeWyx9oOQYwmGw" Type="FormParam" Name="dateEnd" base_Parameter="_b7bXMJ8oEeW1i9yDHqSdJA"/>
+  <profile:Annotation xmi:id="_qFzK8KSpEeWyx9oOQYwmGw" Type="FormParam" Name="description" base_Parameter="_eectkJ8oEeW1i9yDHqSdJA"/>
+  <profile:Annotation xmi:id="_s2FhQKSpEeWyx9oOQYwmGw" Type="FormParam" Name="user" base_Parameter="_fpNQgJ8oEeW1i9yDHqSdJA"/>
   <profile:Annotation xmi:id="_wIlMwKSpEeWyx9oOQYwmGw" Type="PathParam" Name="id" base_Parameter="_oPvogJ8oEeW1i9yDHqSdJA"/>
   <profile:DAO xmi:id="_HctgkKu7EeWAK-bLokT-iQ" base_Class="_E1YR8Ku7EeWAK-bLokT-iQ"/>
   <profile:Database xmi:id="_bHiP8Ku8EeWAK-bLokT-iQ" base_Class="_E1YR8Ku7EeWAK-bLokT-iQ"/>
-  <profile:ThrowException xmi:id="_JXF3sKu9EeWAK-bLokT-iQ" base_Operation="_FTSrEKu9EeWAK-bLokT-iQ" ExceptionName="SQLException"/>
   <profile:ThrowException xmi:id="_QXv3AKu9EeWAK-bLokT-iQ" base_Operation="_riHogKu7EeWAK-bLokT-iQ" ExceptionName="SQLException"/>
+  <profile:DAO xmi:id="_klS2AK2MEeWvZ47xEYa8hg" base_Class="_iNt6oK2MEeWvZ47xEYa8hg"/>
+  <profile:ThrowException xmi:id="_39tsIK2gEeWvZ47xEYa8hg" base_Operation="_2c5ZoK2gEeWvZ47xEYa8hg" ExceptionName="SQLException"/>
 </xmi:XMI>

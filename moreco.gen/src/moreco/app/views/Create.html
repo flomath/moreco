@@ -79,7 +79,7 @@
                       <label for="Start" class="inline">Start</label>
                     </div>
                   <div class="large-10 columns">
-                    <input class="datepicker"
+                    <input class="fdatepicker"
                       type="text" name="Start" id="Start"
                       placeholder=""
                       value=""/>
@@ -91,7 +91,7 @@
                       <label for="End" class="inline">End</label>
                     </div>
                   <div class="large-10 columns">
-                    <input class="datepicker"
+                    <input class="fdatepicker"
                       type="text" name="End" id="End"
                       placeholder=""
                       value=""/>
@@ -125,29 +125,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/what-input.min.js"></script>
    	<script src="assets/foundation-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 
     <script type="text/javascript">
       $(function() {
-		$('.datepicker').fdatepicker({
-			format: 'mm-dd-yyyy hh:ii',
-			disableDblClickSelection: true,
-			pickTime: true
-		});
-
         //Start of user code onLoad
-        // TODO: Implement
+        $('.fdatepicker').fdatepicker({
+          format: 'dd.mm.yyyy hh:ii',
+          disableDblClickSelection: true,
+          pickTime: true
+        });
         //End of user code
       });
       
       function onSubmit() {
         //Start of user code onSubmit
-        // TODO: Implement
+        if (!moment($('#Start').val(), 'DD.MM.YYYY hh:mm').isValid()) {
+          alert("Wrong Start");
+          return false;
+        }
+        if (!moment($('#End').val(), 'DD.MM.YYYY hh:mm').isValid()) {
+          alert("Wrong End");
+          return false;
+        }
+
+        CreateRecord();
         //End of user code
       }
 
       function CreateRecord() {
         //Start of user code CreateRecord
-        // TODO: Implement
+        $.ajax({
+          dataType: "json",
+          url: "http://localhost:8080/moreco/api/CreateRecord",
+          type: "POST",
+          data: {
+            dateStart: moment($('#Start').val(), 'DD.MM.YYYY hh:mm').unix() * 1000,
+            dateEnd: moment($('#End').val(), 'DD.MM.YYYY hh:mm').unix() * 1000,
+            description: $('#Description').val(),
+            user: $('#User').val()
+          }
+        }).done(function() {
+            $('#Start').val("");
+            $('#End').val("");
+            $('#Description').val("");
+            $('#User').val("");
+        });
+
+        return false;
         //End of user code
       }
 

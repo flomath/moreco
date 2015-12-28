@@ -50,7 +50,13 @@ import [classifier.getCompleteName()/];
 [comment]use own primitive types and act like they are basic java types![/comment]
   private static [aClass.name.toUpperFirst()/] _instance;
 
-  private [aClass.name.toUpperFirst()/]() {}
+  // [protected ('variables')]
+  // [/protected] 
+
+  private [aClass.name.toUpperFirst()/]() {    
+    // [protected (aClass.name.toUpperFirst())]
+    // [/protected] 
+  }
 
   public static [aClass.name.toUpperFirst()/] getInstance() {
     if (_instance == null) {

@@ -22,37 +22,30 @@ public class TimeTrackerService {
   @GET
   @Produces("application/json")
   public String GetRecordList(@QueryParam("searchParam") String searchParam) {
-    // Start of user code GetRecordList        
-    // TODO implement GetRecordList
-
-    RecordDAO records = RecordDAO.getInstance();
+    // Start of user code GetRecordList
     Gson gson = new Gson();
-
-    return gson.toJson(records.GetRecords(""));
-
-    //throw new UnsupportedOperationException("Method not yet implemented");
+    return gson.toJson(RecordDAO.getInstance().GetRecords(searchParam));
     // End of user code 
   }
 
   @Path("CreateRecord")
-  @GET
+  @POST
   @Produces("application/json")
-  public String CreateRecord(@QueryParam("dateStart") Long dateStart, @QueryParam("dateEnd") Long dateEnd, @QueryParam("description") String description, @QueryParam("user") String user) {
-
+  public String CreateRecord(@FormParam("dateStart") Long dateStart, @FormParam("dateEnd") Long dateEnd, @FormParam("description") String description, @FormParam("user") String user) {
+    // Start of user code CreateRecord        
     Record r = new Record();
     r.setStart(dateStart);
     r.setEnd(dateEnd);
     r.setDescription(description);
 
-    // TODO !
+    // set user
     User u = new User();
     u.setUsername(user);
     r.setUser(u);
 
-    RecordDAO records = RecordDAO.getInstance();
-
     Gson gson = new Gson();
-    return gson.toJson(records.AddRecord(r));
+    return gson.toJson(RecordDAO.getInstance().AddRecord(r));
+    // End of user code 
   }
 
   @Path("DeleteRecord/{id}")

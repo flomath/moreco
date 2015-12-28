@@ -107,15 +107,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/what-input.min.js"></script>
    	<script src="assets/foundation-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 
     <script type="text/javascript">
       $(function() {
-		$('.datepicker').fdatepicker({
-			format: 'mm-dd-yyyy hh:ii',
-			disableDblClickSelection: true,
-			pickTime: true
-		});
-
         //[protected ('onLoad')]
         // TODO: Implement
         //[/protected]
