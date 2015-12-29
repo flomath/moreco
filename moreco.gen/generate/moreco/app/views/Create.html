@@ -160,8 +160,8 @@
           url: "http://localhost:8080/moreco/api/CreateRecord",
           type: "POST",
           data: {
-            dateStart: moment($('#Start').val(), 'DD.MM.YYYY hh:mm').unix() * 1000,
-            dateEnd: moment($('#End').val(), 'DD.MM.YYYY hh:mm').unix() * 1000,
+            dateStart: moment($('#Start').val(), 'DD.MM.YYYY HH:mm').unix() * 1000,
+            dateEnd: moment($('#End').val(), 'DD.MM.YYYY HH:mm').unix() * 1000,
             description: $('#Description').val(),
             user: $('#User').val()
           }

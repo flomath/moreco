@@ -9,6 +9,7 @@ import moreco.app.entities.Record;
 import moreco.app.entities.User;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
 // End of user code
 
 /**
@@ -21,17 +22,22 @@ public class TimeTrackerService {
   @Path("GetRecordList")
   @GET
   @Produces("application/json")
-  public String GetRecordList(@QueryParam("searchParam") String searchParam) {
+  public Response GetRecordList(@QueryParam("searchParam") String searchParam) {
     // Start of user code GetRecordList
     Gson gson = new Gson();
-    return gson.toJson(RecordDAO.getInstance().GetRecords(searchParam));
+    return Response
+            .status(200)
+            .header("Access-Control-Allow-Origin", "*")
+            .header("Access-Control-Allow-Methods", "GET")
+            .entity(gson.toJson(RecordDAO.getInstance().GetRecords(searchParam)))
+            .build();
     // End of user code 
   }
 
   @Path("CreateRecord")
   @POST
   @Produces("application/json")
-  public String CreateRecord(@FormParam("dateStart") Long dateStart, @FormParam("dateEnd") Long dateEnd, @FormParam("description") String description, @FormParam("user") String user) {
+  public Response CreateRecord(@FormParam("dateStart") Long dateStart, @FormParam("dateEnd") Long dateEnd, @FormParam("description") String description, @FormParam("user") String user) {
     // Start of user code CreateRecord        
     Record r = new Record();
     r.setStart(dateStart);
@@ -44,17 +50,29 @@ public class TimeTrackerService {
     r.setUser(u);
 
     Gson gson = new Gson();
-    return gson.toJson(RecordDAO.getInstance().AddRecord(r));
+    return Response
+            .status(200)
+            .header("Access-Control-Allow-Origin", "*")
+            .header("Access-Control-Allow-Methods", "POST")
+            .entity(gson.toJson(RecordDAO.getInstance().AddRecord(r)))
+            .build();
     // End of user code 
   }
 
   @Path("DeleteRecord/{id}")
   @GET
   @Produces("application/json")
-  public void DeleteRecord(@PathParam("id") Long id) {
-    // Start of user code DeleteRecord        
-    // TODO implement DeleteRecord
-    throw new UnsupportedOperationException("Method not yet implemented");
+  public Response DeleteRecord(@PathParam("id") Long id) {
+    // Start of user code DeleteRecord
+    Long result = RecordDAO.getInstance().RemoveRecord(id);
+
+    Gson gson = new Gson();
+    return Response
+            .status(200)
+            .header("Access-Control-Allow-Origin", "*")
+            .header("Access-Control-Allow-Methods", "POST")
+            .entity(gson.toJson(result))
+            .build();
     // End of user code 
   }
 

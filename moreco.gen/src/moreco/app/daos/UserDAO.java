@@ -44,10 +44,16 @@ public class UserDAO {
       try {
         PreparedStatement statement = DatabaseConnection.getInstance().insert("insert into user (username) values (?)");
         statement.setString(1, user.getUsername());
-        long id = statement.executeUpdate();
+        statement.executeUpdate();
 
-        user.setID(id);
+        ResultSet rs = statement.getGeneratedKeys();
+        if (rs.next()) {
+          user.setID(rs.getLong(1));
+        } else {
+          user = null;
+        }
 
+        rs.close();
         statement.close();
       } catch (SQLException e) {
         e.printStackTrace();
@@ -73,6 +79,7 @@ public class UserDAO {
         userSet.add(u);
       }
 
+      rs.close();
       statement.close();
     } catch (SQLException e) {
       e.printStackTrace();
@@ -91,12 +98,17 @@ public class UserDAO {
 
         ResultSet rs = statement.executeQuery();
 
-        while (rs.next()) {
-          user = new User();
-          user.setID(rs.getLong("id"));
-          user.setUsername(rs.getString("username"));
+        if (rs.next()) {
+          do {
+            user = new User();
+            user.setID(rs.getLong("id"));
+            user.setUsername(rs.getString("username"));
+          } while (rs.next());
+        } else {
+          user = null;
         }
 
+        rs.close();
         statement.close();
       } catch (SQLException e) {
         e.printStackTrace();

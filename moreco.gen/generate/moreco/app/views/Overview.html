@@ -86,6 +86,7 @@
 <th>Description</th>
 <th>Start</th>
 <th>End</th>
+<th>User</th>
 <th>&nbsp;</th>
                 </thead>
                 <tbody>
@@ -122,7 +123,17 @@ End of user code
 
       function DeleteRecord(id) {
         //Start of user code DeleteRecord
-        // TODO: Implement
+        if (!Number.isInteger(id)) {
+          return false;
+        }
+
+        $.ajax({
+          dataType: "json",
+          url: "http://localhost:8080/moreco/api/DeleteRecord/" + id,
+          type: "GET"
+        }).done(function(data) {
+          $("#Table tbody #" + id).html("");
+        });
         //End of user code
       }
 
@@ -134,7 +145,7 @@ End of user code
 
       //Start of user code js_code
       function search(search) {
-        dataArray = {};
+        var dataArray = {};
         if (search != '') {
           dataArray['searchParam'] = search;
         }
@@ -145,10 +156,26 @@ End of user code
           type: "GET",
           data: dataArray
         }).done(function(data) {
-            console.log("test");
+          replaceTable(data);
         });
 
         return false;
+      }
+
+      function replaceTable(data) {
+        var tableData = "";
+        for(var i in data) {
+          tableData += "<tr id='" + data[i].ID + "'>";
+          tableData += "<td>" + data[i].ID + "</td>";
+          tableData += "<td>" + data[i].Description + "</td>";
+          tableData += "<td>" + moment(data[i].Start).format('DD.MM.YYYY HH:mm'); + "</td>";
+          tableData += "<td>" + moment(data[i].End).format('DD.MM.YYYY HH:mm'); + "</td>";
+          tableData += "<td>" + data[i].user.Username + "</td>";
+          tableData += "<td><a href='#' onclick='DeleteRecord(" + data[i].ID + ")'>Delete</a></td>";
+          tableData += "</tr>";
+        }
+
+        $("#Table tbody").html(tableData);
       }
       //End of user code
     </script>

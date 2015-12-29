@@ -36,6 +36,7 @@
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_58JjoJmoEeW_fqpvBCJSyg" name="RemoveRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_BffZQJmpEeW_fqpvBCJSyg" name="id" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_RArcEK4qEeWvZ47xEYa8hg" type="_UzFfsIkoEeWDkO9NzaSg1w" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_ZBr4QJmpEeW_fqpvBCJSyg" name="GetRecords">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGIhAJ_xEeWBS5CrqAEn6w" name="searchParam" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
@@ -75,11 +76,11 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_JkDFkJmpEeW_fqpvBCJSyg" name="moreco.app.restservices">
       <packagedElement xmi:type="uml:Class" xmi:id="_tLHrsJmpEeW_fqpvBCJSyg" name="TimeTrackerService">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_2lmpIJmpEeW_fqpvBCJSyg" name="GetRecordList">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0gHqcJ8nEeW1i9yDHqSdJA" type="_5ZFMMIkoEeWDkO9NzaSg1w" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0gHqcJ8nEeW1i9yDHqSdJA" type="_DKpNQK4SEeWvZ47xEYa8hg" direction="return"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_B0ylgJ8oEeW1i9yDHqSdJA" name="searchParam" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_N6pkEJ8oEeW1i9yDHqSdJA" name="CreateRecord">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qchq8J8oEeW1i9yDHqSdJA" type="_5ZFMMIkoEeWDkO9NzaSg1w" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qchq8J8oEeW1i9yDHqSdJA" type="_DKpNQK4SEeWvZ47xEYa8hg" direction="return"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_XKq98J8oEeW1i9yDHqSdJA" name="dateStart" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_b7bXMJ8oEeW1i9yDHqSdJA" name="dateEnd" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_eectkJ8oEeW1i9yDHqSdJA" name="description" type="_5ZFMMIkoEeWDkO9NzaSg1w"/>
@@ -87,6 +88,7 @@
         </ownedOperation>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_l5neoJ8oEeW1i9yDHqSdJA" name="DeleteRecord">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_oPvogJ8oEeW1i9yDHqSdJA" name="id" type="_UzFfsIkoEeWDkO9NzaSg1w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_L8QM0K4SEeWvZ47xEYa8hg" type="_DKpNQK4SEeWvZ47xEYa8hg" direction="return"/>
         </ownedOperation>
       </packagedElement>
     </packagedElement>
@@ -120,6 +122,7 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_Sox0sKydEeWS4ODjRUtHTA" name="record" type="_UVFLgHMjEeWkOukjc0SMbw" association="_SowmkKydEeWS4ODjRUtHTA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_DKpNQK4SEeWvZ47xEYa8hg" name="Response"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hM1zkISnEeWmSZFgLfynHg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hM1zkYSnEeWmSZFgLfynHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
@@ -154,7 +157,7 @@
   <profile:Scannable xmi:id="_EtMU8J_3EeWBS5CrqAEn6w" base_Package="_O2XzIJ_xEeWBS5CrqAEn6w"/>
   <profile:FormItem xmi:id="_jLy2AKPUEeWgFfOu_pc1Gg" base_ViewProperty="_eTiGkKPUEeWgFfOu_pc1Gg" Label="" Type="text" base_Property="_eTiGkKPUEeWgFfOu_pc1Gg" Placeholder="Search..."/>
   <profile:FormItem xmi:id="_wRoq4KPUEeWgFfOu_pc1Gg" base_ViewProperty="_uI6q4KPUEeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_uI6q4KPUEeWgFfOu_pc1Gg" Value="Search"/>
-  <profile:Table xmi:id="_tn-kMKPYEeWgFfOu_pc1Gg" base_ViewProperty="_s-FSoKPYEeWgFfOu_pc1Gg" base_Property="_s-FSoKPYEeWgFfOu_pc1Gg" Header="&lt;th>ID&lt;/th>&#xA;&lt;th>Description&lt;/th>&#xA;&lt;th>Start&lt;/th>&#xA;&lt;th>End&lt;/th>&#xA;&lt;th>&amp;nbsp;&lt;/th>"/>
+  <profile:Table xmi:id="_tn-kMKPYEeWgFfOu_pc1Gg" base_ViewProperty="_s-FSoKPYEeWgFfOu_pc1Gg" base_Property="_s-FSoKPYEeWgFfOu_pc1Gg" Header="&lt;th>ID&lt;/th>&#xA;&lt;th>Description&lt;/th>&#xA;&lt;th>Start&lt;/th>&#xA;&lt;th>End&lt;/th>&#xA;&lt;th>User&lt;/th>&#xA;&lt;th>&amp;nbsp;&lt;/th>"/>
   <profile:View xmi:id="_0y_GcKPlEeWgFfOu_pc1Gg" base_Class="_yczSMKPlEeWgFfOu_pc1Gg" base_ViewProperty="_yczSMKPlEeWgFfOu_pc1Gg" Title="Create"/>
   <profile:NavigationItem xmi:id="_-zNOMKPlEeWgFfOu_pc1Gg" Label="Overview" Link="overview.html" base_Property="_8yCAoKPlEeWgFfOu_pc1Gg"/>
   <profile:NavigationItem xmi:id="_DOwMcKPmEeWgFfOu_pc1Gg" CssClass="active" Label="Create" Link="create.html" base_Property="_Bpgs8KPmEeWgFfOu_pc1Gg"/>

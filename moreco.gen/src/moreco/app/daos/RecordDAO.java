@@ -47,7 +47,6 @@ public class RecordDAO {
       User user = UserDAO.getInstance().GetUser(record.getUser());
       if (user == null) {
         user = UserDAO.getInstance().AddUser(record.getUser());
-        record.setUser(user);
       }
       record.setUser(user);
 
@@ -57,9 +56,16 @@ public class RecordDAO {
         statement.setTimestamp(2, new Timestamp(record.getStart()));
         statement.setTimestamp(3, new Timestamp(record.getEnd()));
         statement.setLong(4, record.getUser().getID());
-        long id = statement.executeUpdate();
-        record.setID(id);
+        statement.executeUpdate();
 
+        ResultSet rs = statement.getGeneratedKeys();
+        if (rs.next()) {
+          record.setID(rs.getLong(1));
+        } else {
+          record = null;
+        }
+
+        rs.close();
         statement.close();
       } catch (SQLException e) {
         e.printStackTrace();
@@ -70,10 +76,27 @@ public class RecordDAO {
     // End of user code 
   }
 
-  public void RemoveRecord(Long id) {
-    // Start of user code RemoveRecord        
-    // TODO implement RemoveRecord
-    throw new UnsupportedOperationException("Method not yet implemented");
+  public Long RemoveRecord(Long id) {
+    // Start of user code RemoveRecord
+    long result = 0;
+
+    if (id > 0) {
+      try {
+        String query = "delete from record where id = ?";
+        PreparedStatement statement = DatabaseConnection.getInstance().query(query);
+        statement.setLong(1, id);
+
+        statement.execute();
+        result = 1;
+
+        statement.close();
+      } catch (SQLException e) {
+        e.printStackTrace();
+        result = 0;
+      }
+    }
+
+    return result;
     // End of user code 
   }
 
@@ -91,12 +114,12 @@ public class RecordDAO {
     try {
       String query = "select * from record";
       if (searchParam != null) {
-        query += " where description = ?";
+        query += " where description LIKE ?";
       }
       PreparedStatement statement = DatabaseConnection.getInstance().query(query);
 
       if (searchParam != null) {
-        statement.setString(1, searchParam);
+        statement.setString(1, "%" + searchParam + "%");
       }
 
       ResultSet rs = statement.executeQuery();
@@ -105,12 +128,13 @@ public class RecordDAO {
         Record r = new Record();
         r.setDescription(rs.getString("description"));
         r.setID(rs.getLong("id"));
-        r.setStart(rs.getLong("start"));
-        r.setEnd(rs.getLong("end"));
+        r.setStart(rs.getTimestamp("start").getTime());
+        r.setEnd(rs.getTimestamp("end").getTime());
         r.setUser(users.get(rs.getLong("user")));
         recordSet.add(r);
       }
 
+      rs.close();
       statement.close();
     } catch (SQLException e) {
       e.printStackTrace();
