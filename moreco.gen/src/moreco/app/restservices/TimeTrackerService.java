@@ -16,7 +16,7 @@ import javax.ws.rs.core.Response;
  * RestService: TimeTrackerService
  * package: moreco.app.restservices
  */
-@Path("moreco/api/")
+@Path("api/")
 public class TimeTrackerService {
 
   @Path("GetRecordList")
