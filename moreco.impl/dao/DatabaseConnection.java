@@ -14,10 +14,13 @@ public class DatabaseConnection {
 
   private static DatabaseConnection _instance;
 
-  public Connection conn;
+  // Start of user code variables
+  private Connection conn;
   private Statement statement;
+  // End of user code
 
   private DatabaseConnection() {
+    // Start of user code DatabaseConnection
     String url= "jdbc:mysql://localhost:3306/";
     String dbName = "moreco";
     String driver = "com.mysql.jdbc.Driver";
@@ -30,6 +33,7 @@ public class DatabaseConnection {
     catch (Exception sqle) {
       sqle.printStackTrace();
     }
+    // End of user code
   }
 
   public static DatabaseConnection getInstance() {
@@ -41,15 +45,18 @@ public class DatabaseConnection {
   }
 
 
-  public ResultSet query(String query) throws SQLException {
-    statement = _instance.conn.createStatement();
-    ResultSet res = statement.executeQuery(query);
-    return res;
+  public PreparedStatement query(String query) throws SQLException {
+    // Start of user code query
+    PreparedStatement statement = _instance.conn.prepareStatement(query, Statement.KEEP_CURRENT_RESULT);
+    return statement;
+    // End of user code
   }
 
-  public void insert(String query) throws SQLException {
-    statement = _instance.conn.createStatement();
-    int result = statement.executeUpdate(query);
+  public PreparedStatement insert(String query) throws SQLException {
+    // Start of user code insert
+    PreparedStatement statement = _instance.conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+    return statement;
+    // End of user code
   }
 
 
