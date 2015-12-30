@@ -129,7 +129,7 @@ End of user code
 
         $.ajax({
           dataType: "json",
-          url: "http://localhost:8080/moreco/api/DeleteRecord/" + id,
+          url: "moreco/api/DeleteRecord/" + id,
           type: "GET"
         }).done(function(data) {
           $("#Table tbody #" + id).html("");
@@ -152,7 +152,7 @@ End of user code
 
         $.ajax({
           dataType: "json",
-          url: "http://localhost:8080/moreco/api/GetRecordList",
+          url: "moreco/api/GetRecordList",
           type: "GET",
           data: dataArray
         }).done(function(data) {

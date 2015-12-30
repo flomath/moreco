@@ -157,7 +157,7 @@
         //Start of user code CreateRecord
         $.ajax({
           dataType: "json",
-          url: "http://localhost:8080/moreco/api/CreateRecord",
+          url: "moreco/api/CreateRecord",
           type: "POST",
           data: {
             dateStart: moment($('#Start').val(), 'DD.MM.YYYY HH:mm').unix() * 1000,
