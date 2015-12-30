@@ -152,15 +152,15 @@
   <profile:Scannable xmi:id="_Q9dYUJ8pEeW1i9yDHqSdJA" base_Package="_JkDFkJmpEeW_fqpvBCJSyg"/>
   <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/api/"/>
   <profile:View xmi:id="_sjaG8J_1EeWBS5CrqAEn6w" base_Class="_SxIjEJ_yEeWBS5CrqAEn6w" base_ViewProperty="_SxIjEJ_yEeWBS5CrqAEn6w" Title="Overview"/>
-  <profile:NavigationItem xmi:id="_-hAU8J_1EeWBS5CrqAEn6w" CssClass="active" Label="Overview" Link="overview.html" base_Property="_AWPVEJ_yEeWBS5CrqAEn6w"/>
-  <profile:NavigationItem xmi:id="_ELmgQJ_2EeWBS5CrqAEn6w" Label="Create" Link="create.html" base_Property="_NJygEJ_yEeWBS5CrqAEn6w"/>
+  <profile:NavigationItem xmi:id="_-hAU8J_1EeWBS5CrqAEn6w" CssClass="active" Label="Overview" Link="Overview.html" base_Property="_AWPVEJ_yEeWBS5CrqAEn6w"/>
+  <profile:NavigationItem xmi:id="_ELmgQJ_2EeWBS5CrqAEn6w" Label="Create" Link="Create.html" base_Property="_NJygEJ_yEeWBS5CrqAEn6w"/>
   <profile:Scannable xmi:id="_EtMU8J_3EeWBS5CrqAEn6w" base_Package="_O2XzIJ_xEeWBS5CrqAEn6w"/>
   <profile:FormItem xmi:id="_jLy2AKPUEeWgFfOu_pc1Gg" base_ViewProperty="_eTiGkKPUEeWgFfOu_pc1Gg" Label="" Type="text" base_Property="_eTiGkKPUEeWgFfOu_pc1Gg" Placeholder="Search..."/>
   <profile:FormItem xmi:id="_wRoq4KPUEeWgFfOu_pc1Gg" base_ViewProperty="_uI6q4KPUEeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_uI6q4KPUEeWgFfOu_pc1Gg" Value="Search"/>
   <profile:Table xmi:id="_tn-kMKPYEeWgFfOu_pc1Gg" base_ViewProperty="_s-FSoKPYEeWgFfOu_pc1Gg" base_Property="_s-FSoKPYEeWgFfOu_pc1Gg" Header="&lt;th>ID&lt;/th>&#xA;&lt;th>Description&lt;/th>&#xA;&lt;th>Start&lt;/th>&#xA;&lt;th>End&lt;/th>&#xA;&lt;th>User&lt;/th>&#xA;&lt;th>&amp;nbsp;&lt;/th>"/>
   <profile:View xmi:id="_0y_GcKPlEeWgFfOu_pc1Gg" base_Class="_yczSMKPlEeWgFfOu_pc1Gg" base_ViewProperty="_yczSMKPlEeWgFfOu_pc1Gg" Title="Create"/>
-  <profile:NavigationItem xmi:id="_-zNOMKPlEeWgFfOu_pc1Gg" Label="Overview" Link="overview.html" base_Property="_8yCAoKPlEeWgFfOu_pc1Gg"/>
-  <profile:NavigationItem xmi:id="_DOwMcKPmEeWgFfOu_pc1Gg" CssClass="active" Label="Create" Link="create.html" base_Property="_Bpgs8KPmEeWgFfOu_pc1Gg"/>
+  <profile:NavigationItem xmi:id="_-zNOMKPlEeWgFfOu_pc1Gg" Label="Overview" Link="Overview.html" base_Property="_8yCAoKPlEeWgFfOu_pc1Gg"/>
+  <profile:NavigationItem xmi:id="_DOwMcKPmEeWgFfOu_pc1Gg" CssClass="active" Label="Create" Link="Create.html" base_Property="_Bpgs8KPmEeWgFfOu_pc1Gg"/>
   <profile:FormItem xmi:id="_4JMLQKP7EeWgFfOu_pc1Gg" base_ViewProperty="_0aNYEKP7EeWgFfOu_pc1Gg" Label="Username" Type="text" base_Property="_0aNYEKP7EeWgFfOu_pc1Gg" Placeholder=""/>
   <profile:FormItem xmi:id="_8l8DYKP7EeWgFfOu_pc1Gg" base_ViewProperty="_7rGLwKP7EeWgFfOu_pc1Gg" Label="Description" Type="text" base_Property="_7rGLwKP7EeWgFfOu_pc1Gg"/>
   <profile:FormItem xmi:id="_HRDiQKP8EeWgFfOu_pc1Gg" base_ViewProperty="_GEiEwKP8EeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_GEiEwKP8EeWgFfOu_pc1Gg" Value="Create"/>

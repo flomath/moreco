@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="testo">
-    <output-path>$PROJECT_DIR$/out/artifacts/testo</output-path>
-    <root id="archive" name="testo.war">
+  <artifact type="war" build-on-make="true" name="Moreco">
+    <output-path>$PROJECT_DIR$/out/artifacts/Moreco</output-path>
+    <root id="archive" name="Moreco.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="moreco.gen" />

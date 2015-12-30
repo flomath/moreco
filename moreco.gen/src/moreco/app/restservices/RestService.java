@@ -5,7 +5,7 @@ package moreco.app.restservices;
 import javax.ws.rs.*;
 // End of user code
 
-@ApplicationPath("/")
+@ApplicationPath("/moreco/")
 public class RestService extends javax.ws.rs.core.Application {
 
 }
