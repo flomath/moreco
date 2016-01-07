@@ -45,6 +45,8 @@ public class DatabaseConnection {
   }
 
 
+
+
   public PreparedStatement query(String query) throws SQLException {
     // Start of user code query
     PreparedStatement statement = _instance.conn.prepareStatement(query, Statement.KEEP_CURRENT_RESULT);

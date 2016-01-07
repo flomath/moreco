@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_9VJIwKu8EeWAK-bLokT-iQ/30" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_9VJIwKu8EeWAK-bLokT-iQ/30 ../MetaProfile/morecoprof.profile.uml#_9VKW4Ku8EeWAK-bLokT-iQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_BFrFcLUQEeWE7Nn7XEGVjw/31" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_BFrFcLUQEeWE7Nn7XEGVjw/31 ../MetaProfile/morecoprof.profile.uml#_BFvW4LUQEeWE7Nn7XEGVjw">
   <uml:Model xmi:id="_VtygUHMiEeWkOukjc0SMbw" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_4XwfMISgEeWmSZFgLfynHg">
       <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
@@ -130,31 +130,27 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_of-f4IkOEeWDkO9NzaSg1w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_--ynIKu8EeWAK-bLokT-iQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynIau8EeWAK-bLokT-iQ" key="Version" value="1.0.24"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynIqu8EeWAK-bLokT-iQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynI6u8EeWAK-bLokT-iQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynJKu8EeWAK-bLokT-iQ" key="Date" value="2015-12-26"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_--ynJau8EeWAK-bLokT-iQ" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HegPwLUQEeWE7Nn7XEGVjw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HegPwbUQEeWE7Nn7XEGVjw" key="Version" value="1.0.25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HegPwrUQEeWE7Nn7XEGVjw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HegPw7UQEeWE7Nn7XEGVjw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HegPxLUQEeWE7Nn7XEGVjw" key="Date" value="2016-01-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HegPxbUQEeWE7Nn7XEGVjw" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogAVEIkOEeWDkO9NzaSg1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_9VKW4Ku8EeWAK-bLokT-iQ"/>
+        <references xmi:type="ecore:EPackage" href="../MetaProfile/morecoprof.profile.uml#_BFvW4LUQEeWE7Nn7XEGVjw"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../MetaProfile/morecoprof.profile.uml#_LmKLwOEkEeSZw71nfpMpew"/>
     </profileApplication>
   </uml:Model>
   <profile:Main xmi:id="_s99HEIkOEeWDkO9NzaSg1w" base_Class="_SN5a8ISaEeWmSZFgLfynHg"/>
-  <profile:Scannable xmi:id="_jYl54IkPEeWDkO9NzaSg1w" base_Package="_OZ9PQISaEeWmSZFgLfynHg"/>
-  <profile:Scannable xmi:id="_3YbKwIkiEeWDkO9NzaSg1w" base_Package="_WTq2IISdEeWmSZFgLfynHg"/>
   <profile:WebMethod xmi:id="_ip_9cJ8nEeW1i9yDHqSdJA" base_Operation="_2lmpIJmpEeW_fqpvBCJSyg" RestMethod="GET" RestOutput="application/json" RestPath="GetRecordList"/>
   <profile:WebMethod xmi:id="_Rci9gJ8oEeW1i9yDHqSdJA" base_Operation="_N6pkEJ8oEeW1i9yDHqSdJA" RestMethod="POST" RestOutput="application/json" RestPath="CreateRecord"/>
   <profile:WebMethod xmi:id="_yBIDAJ8oEeW1i9yDHqSdJA" base_Operation="_l5neoJ8oEeW1i9yDHqSdJA" RestMethod="GET" RestOutput="application/json" RestPath="DeleteRecord/{id}"/>
-  <profile:Scannable xmi:id="_Q9dYUJ8pEeW1i9yDHqSdJA" base_Package="_JkDFkJmpEeW_fqpvBCJSyg"/>
-  <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="moreco/api/"/>
+  <profile:RestService xmi:id="_li3WEJ8pEeW1i9yDHqSdJA" base_Class="_tLHrsJmpEeW_fqpvBCJSyg" RestPath="api/"/>
   <profile:View xmi:id="_sjaG8J_1EeWBS5CrqAEn6w" base_Class="_SxIjEJ_yEeWBS5CrqAEn6w" base_ViewProperty="_SxIjEJ_yEeWBS5CrqAEn6w" Title="Overview"/>
   <profile:NavigationItem xmi:id="_-hAU8J_1EeWBS5CrqAEn6w" CssClass="active" Label="Overview" Link="Overview.html" base_Property="_AWPVEJ_yEeWBS5CrqAEn6w"/>
   <profile:NavigationItem xmi:id="_ELmgQJ_2EeWBS5CrqAEn6w" Label="Create" Link="Create.html" base_Property="_NJygEJ_yEeWBS5CrqAEn6w"/>
-  <profile:Scannable xmi:id="_EtMU8J_3EeWBS5CrqAEn6w" base_Package="_O2XzIJ_xEeWBS5CrqAEn6w"/>
   <profile:FormItem xmi:id="_jLy2AKPUEeWgFfOu_pc1Gg" base_ViewProperty="_eTiGkKPUEeWgFfOu_pc1Gg" Label="" Type="text" base_Property="_eTiGkKPUEeWgFfOu_pc1Gg" Placeholder="Search..."/>
   <profile:FormItem xmi:id="_wRoq4KPUEeWgFfOu_pc1Gg" base_ViewProperty="_uI6q4KPUEeWgFfOu_pc1Gg" CssClass="radius button" Label="" Type="submit" base_Property="_uI6q4KPUEeWgFfOu_pc1Gg" Value="Search"/>
   <profile:Table xmi:id="_tn-kMKPYEeWgFfOu_pc1Gg" base_ViewProperty="_s-FSoKPYEeWgFfOu_pc1Gg" base_Property="_s-FSoKPYEeWgFfOu_pc1Gg" Header="&lt;th>ID&lt;/th>&#xA;&lt;th>Description&lt;/th>&#xA;&lt;th>Start&lt;/th>&#xA;&lt;th>End&lt;/th>&#xA;&lt;th>User&lt;/th>&#xA;&lt;th>&amp;nbsp;&lt;/th>"/>
